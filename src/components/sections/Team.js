@@ -7,42 +7,47 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
-    image: 'josh.jpg',
-    role: 'Founder',
+    name: 'භෘංගරාජ තෛලය',
+    image: 'brungaraja.jpg',
+    role: 'ක්‍රියාකාරී සංයෝග පහක් සමඟ කේශ වර්ධනය උද්දීපනය කරයි.',
   },
   {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
+    name: 'දසවග කසාය',
+    image: 'Dasawaga kasaya.jpg',
+    // role: 'ක්‍රියාකාරී සංයෝග පහක් සමඟ කේශ වර්ධනය උද්දීපනය කරයි.',
   },
-  {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
-  },
-  {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
-  },
-  {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
-  },
-  {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
-  },
+  // {
+  //   name: 'Lisa Haydon',
+  //   image: 'lisa.jpg',
+  //   role: 'Art Director',
+  // },
+  // {
+  //   name: 'Ashlyn Harris',
+  //   image: 'ashlyn.jpg',
+  //   role: 'Frontend Engineer',
+  // },
+  // {
+  //   name: 'Todd Joseph',
+  //   image: 'todd.jpg',
+  //   role: 'Designer',
+  // },
+  // {
+  //   name: 'Martin White',
+  //   image: 'martin.jpg',
+  //   role: 'Backend Engineer',
+  // },
+  // {
+  //   name: 'Rose Leslie',
+  //   image: 'rose.jpg',
+  //   role: 'Marketing',
+  // },
 ];
 
 const Team = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "team" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "product" } }) {
           edges {
             node {
               relativePath
@@ -69,7 +74,7 @@ const Team = () => (
     render={data => (
       <Section id="products" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
+          <h1>Products</h1>
           <TeamGrid>
             {TEAM.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
@@ -149,7 +154,8 @@ const ArtMobile = styled.figure`
 `;
 
 const Title = styled.p`
-  margin-top: 16px;
+  margin-top: 18px;
+  font-weight: bold;
   color: ${props => props.theme.color.black.regular};
 `;
 
