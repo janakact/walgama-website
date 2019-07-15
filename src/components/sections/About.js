@@ -33,7 +33,7 @@ const About = () => (
 
         art_ideas: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
+          name: { eq: "logo" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -46,48 +46,49 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
-          <Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.founder.childImageSharp.fluid} />
+            </Art>
             <div>
               <h2>History</h2>
               <p>
                 The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).
               </p>
             </div>
+          </Grid>
+          <Grid >
+            <div>
+              <h2>Our Vision</h2>
+              <p>
+                Adding modern technology to our products.<br />
+                Expansion of our products throughout the country and abroad.<br />
+                To be a leading institute in the field of Ayurveda.<br />
+                Our objective is to contribute to the cure of patients by introducing new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines.
+              </p>
+            </div>
             <Art>
-              <Img fluid={data.founder.childImageSharp.fluid} />
+              <Img fluid={data.logo_post.childImageSharp.fluid} />
             </Art>
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.logo_post.childImageSharp.fluid} />
-            </Art>
-            <div>
-              <h2>Our Vision</h2>
-              <p>
-                Adding modern technology to our products.<br/>
-                Expansion of our products throughout the country and abroad.<br/>
-                To be a leading institute in the field of Ayurveda.<br/>
-                Our objective is to contribute to the cure of patients by introducing new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines.
-              </p>
-            </div>
-          </Grid>
-          <Grid>
-            <div>
-              <h2>Grow and build your ideas</h2>
-              <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
-              </p>
-            </div>
-            <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
+            <div>
+              <h2>Our Services</h2>
+              <p>
+                <ul>
+                  <li>Our products ordering service is available anywhere in the country</li>
+                  <li>Provision of  Ayurvedic medicines to Ayurvedic Doctors</li>
+                  <li>Ayurvedic medical centers for further treatments.</li>
+                  <li>Ayurvedic Pharmaceutical raw materials supply service for the registered Doctors at our institution.</li>
+                </ul>
+              </p>
+            </div>
           </Grid>
         </Container>
-      </Section>
+      </Section >
     )}
   />
 );
