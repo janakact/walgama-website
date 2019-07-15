@@ -49,29 +49,23 @@ const Header = () => (
             <Grid>
               <Img fluid={data.p1.childImageSharp.fluid} />
               <Text>
-                <h1>
+                <h1 style={{ color: 'red' }}>
                   ශ්‍රී ලසුනු පද්ම තෛලය
                 </h1>
                 <p>
-      හිසරදය වහා සමනය කරන පාරම්පරික ඖෂධීය තෛලය.
+                  හිසරදය වහා සමනය කරන පාරම්පරික ඖෂධීය තෛලය.
                 </p>
               </Text>
             </Grid>
             <Grid>
               <Img fluid={data.p2.childImageSharp.fluid} />
               <Text>
-                <h1>
-                  Anywhere in the country..
-                <br />
-                  every way
-                <br />
-                  that matters
-              </h1>
+                <h1 style={{ color: 'green' }}>
+                  පාවට්ටා තල් සූකිරි පැණිය
+                </h1>
                 <br />
                 <p>
-                  <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                    Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
+                  More details
                 </p>
               </Text>
             </Grid>
@@ -125,6 +119,15 @@ const Grid = styled.div`
 
 const Text = styled.div`
   justify-self: center;
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    justify-self: start;
+  }
+`;
+
+const Title = styled.h1`
+  justify-self: center;
+  color: ${props => props.theme.color.primary};
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
