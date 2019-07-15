@@ -9,9 +9,9 @@ const About = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_fast: file(
+        founder: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
+          name: { eq: "founder" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -20,9 +20,9 @@ const About = () => (
           }
         }
 
-        art_learn: file(
+        logo_post: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
+          name: { eq: "logo_post" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -48,28 +48,26 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>History</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).
               </p>
             </div>
             <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
+              <Img fluid={data.founder.childImageSharp.fluid} />
             </Art>
           </Grid>
           <Grid inverse>
             <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
+              <Img fluid={data.logo_post.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Our Vision</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                Adding modern technology to our products.<br/>
+                Expansion of our products throughout the country and abroad.<br/>
+                To be a leading institute in the field of Ayurveda.<br/>
+                Our objective is to contribute to the cure of patients by introducing new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines.
               </p>
             </div>
           </Grid>
@@ -124,8 +122,8 @@ const Grid = styled.div`
     }
 
     ${props =>
-      props.inverse &&
-      `
+    props.inverse &&
+    `
         ${Art} {
           order: 2;
         }

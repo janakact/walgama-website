@@ -3,16 +3,36 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+
+import Carousel from 'nuka-carousel';
+
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 
 const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_build: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+        p1: file(
+          sourceInstanceName: { eq: "product" }
+          name: { eq: "lasunu2" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1400) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        p2: file(
+          sourceInstanceName: { eq: "product" }
+          name: { eq: "pawatta thalsukiri" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -25,36 +45,49 @@ const Header = () => (
     render={data => (
       <HeaderWrapper>
         <Container>
-          <Grid>
-            <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
-            </Art>
-            <Text>
-              <h1>
-                Fast in
+          <Carousel>
+            <Grid>
+              <Img fluid={data.p1.childImageSharp.fluid} />
+              <Text>
+                <h1>
+                  ශ්‍රී ලසුනු පද්ම තෛලය
+                </h1>
+                <p>
+      හිසරදය වහා සමනය කරන පාරම්පරික ඖෂධීය තෛලය.
+                </p>
+              </Text>
+            </Grid>
+            <Grid>
+              <Img fluid={data.p2.childImageSharp.fluid} />
+              <Text>
+                <h1>
+                  Anywhere in the country..
                 <br />
-                every way
+                  every way
                 <br />
-                that matters
+                  that matters
               </h1>
-              <br />
-              <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <br />
+                <p>
+                  <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
+                    Check out source &nbsp;&#x2794;
                 </StyledExternalLink>
-              </p>
-            </Text>
-          </Grid>
+                </p>
+              </Text>
+            </Grid>
+          </Carousel>
         </Container>
       </HeaderWrapper>
     )}
   />
 );
 
-const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
-  padding-top: 96px;
 
+
+
+// background-color: ${props => props.theme.color.primary};
+const HeaderWrapper = styled.header`
+  padding-top: 96px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
   }

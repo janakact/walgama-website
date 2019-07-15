@@ -67,7 +67,7 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="products" accent="secondary">
         <Container style={{ position: 'relative' }}>
           <h1>The Team</h1>
           <TeamGrid>
@@ -85,12 +85,12 @@ const Team = () => (
               );
             })}
           </TeamGrid>
-          <Art>
+          {/* <Art>
             <Img fluid={data.art_team.childImageSharp.fluid} />
-          </Art>
-          <ArtMobile>
+          </Art> */}
+          {/* <ArtMobile>
             <Img fluid={data.art_team.childImageSharp.fluid} />
-          </ArtMobile>
+          </ArtMobile> */}
         </Container>
       </Section>
     )}

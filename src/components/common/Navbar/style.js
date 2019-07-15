@@ -4,7 +4,7 @@ import { Container } from '@components/global';
 
 export const Nav = styled.nav`
   padding: 16px 0;
-  background-color: ${props => props.theme.color.primary};
+  background-color: ${props => 'white' /*props.theme.color.primary*/ };
   position: fixed;
   width: 100%;
   top: 0;
@@ -53,6 +53,7 @@ export const NavItem = styled.li`
   &.active {
     a {
       opacity: 1;
+      color:green;
     }
   }
 `;
@@ -64,6 +65,7 @@ export const MobileMenu = styled.div`
 
 export const Brand = styled.div`
   font-family: ${props => props.theme.font.primary};
+  min-width: 100px;
   ${props => props.theme.font_size.large};
 `;
 

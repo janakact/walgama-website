@@ -15,8 +15,23 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `product`,
+        path: `${__dirname}/src/images/art/products`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `art`,
         path: `${__dirname}/src/images/art`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `./src/data/`,
       },
     },
     `gatsby-transformer-sharp`,
