@@ -12,7 +12,7 @@ export default function Logo() {
           name: { eq: "logo2" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }

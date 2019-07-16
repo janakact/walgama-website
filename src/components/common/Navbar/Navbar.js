@@ -16,7 +16,7 @@ import {
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import Logo from './Logo';
 
-const NAV_ITEMS = ['About', 'Brands', 'Products', 'FAQ'];
+const NAV_ITEMS = ['About', 'Products'];
 
 class Navbar extends Component {
   state = {
@@ -64,9 +64,6 @@ class Navbar extends Component {
             <Logo />
             {/* <Img fluid={img.childImageSharp.fluid} alt={name} /> */}
             {/* Absurd */}
-          </Brand>
-          <Brand>
-            <Logo />
           </Brand>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>

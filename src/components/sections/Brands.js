@@ -58,9 +58,6 @@ const UsedBy = () => (
     `}
     render={data => (
       <Section id="brands">
-        <Art>
-          <Img fluid={data.art_story.childImageSharp.fluid} />
-        </Art>
         <StyledContainer>
           {/* <div>
             <h1>Used by biggest in tech</h1>
@@ -106,7 +103,7 @@ const StyledContainer = styled(Container)`
 
 const Art = styled.figure`
   margin:0;
-  width: 100%;
+  max-width:100px;
   position: absolute;
 `;
 

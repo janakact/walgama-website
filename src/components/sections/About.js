@@ -33,7 +33,7 @@ const About = () => (
 
         art_ideas: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "logo" }
+          name: { eq: "herb" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -44,14 +44,15 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="about" accent="secondary">
         <Container>
+          <h1>About</h1>
           <Grid inverse>
             <Art>
               <Img fluid={data.logo_post.childImageSharp.fluid} />
             </Art>
             <div>
-              <Title>Our Vision</Title>
+              <Title>Vision</Title>
               <Text>
                 <ul>
                   <li>
@@ -68,11 +69,14 @@ const About = () => (
             <div>
               <Title>History</Title>
               <Text>
-                The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).
+                The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga. <br />
+                Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us.  <br />
+                For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.  <br />
+                As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).
               </Text>
             </div>
             <Art>
-              <Img fluid={data.founder.childImageSharp.fluid} />
+              <Img style={{ borderRadius: '100%' }} fluid={data.founder.childImageSharp.fluid} />
             </Art>
           </Grid>
           <Grid inverse>
@@ -80,7 +84,7 @@ const About = () => (
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
             <div>
-              <Title>Our Services</Title>
+              <Title>Services</Title>
               <Text>
                 <ul>
                   <li>Our products ordering service is available anywhere in the country</li>

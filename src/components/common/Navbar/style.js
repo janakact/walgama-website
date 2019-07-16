@@ -5,6 +5,10 @@ import { Container } from '@components/global';
 export const Nav = styled.nav`
   padding: 16px 0;
   background-color: ${props => 'white' /*props.theme.color.primary*/ };
+  border-bottom-color: #d4e7d4;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  
   position: fixed;
   width: 100%;
   top: 0;

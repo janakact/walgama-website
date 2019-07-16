@@ -17,6 +17,7 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-svgr": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-source-instagram-all": "^2.0.5",
     "gatsby-transformer-json": "^2.2.2",
     "gatsby-transformer-sharp": "^2.1.8",
     "nuka-carousel": "^4.5.9",
