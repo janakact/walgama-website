@@ -21,8 +21,8 @@ const Header = () => (
     query={graphql`
       query {
         p1: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "a1" }
+          sourceInstanceName: { eq: "product" }
+          name: { eq: "gugguladi" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -31,8 +31,28 @@ const Header = () => (
           }
         }
         p2: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "a3" }
+          sourceInstanceName: { eq: "product" }
+          name: { eq: "lily" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1400) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        p3: file(
+          sourceInstanceName: { eq: "product" }
+          name: { eq: "mahaneelyadi" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1400) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
+        p4: file(
+          sourceInstanceName: { eq: "product" }
+          name: { eq: "lasunu" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -45,10 +65,12 @@ const Header = () => (
     render={data => (
       <HeaderWrapper>
         <Container>
-          <Img fluid={data.p1.childImageSharp.fluid} />
-          {/* <Carousel>
-            <Img fluid={data.p2.childImageSharp.fluid} />
-          </Carousel> */}
+          <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding:100, backgroundColor:'rgba(0,0,0,0.5)', width:'100%' }}>Something</div>}>
+            <Img style={{ maxHeight: 800 }} fluid={data.p1.childImageSharp.fluid} />
+            <Img style={{ maxHeight: 800 }} fluid={data.p2.childImageSharp.fluid} />
+            <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
+            <Img style={{ maxHeight: 800 }} fluid={data.p4.childImageSharp.fluid} />
+          </Carousel>
         </Container>
       </HeaderWrapper>
     )}
