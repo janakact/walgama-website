@@ -64,7 +64,10 @@ class Navbar extends Component {
             <Logo />
             {/* <Img fluid={img.childImageSharp.fluid} alt={name} /> */}
             {/* Absurd */}
-            </Brand>
+          </Brand>
+          <Brand>
+            <Logo />
+          </Brand>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

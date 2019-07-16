@@ -156,11 +156,13 @@ const ArtMobile = styled.figure`
 const Title = styled.p`
   margin-top: 18px;
   font-weight: bold;
+  opacity: 0.8;
   color: ${props => props.theme.color.black.regular};
 `;
 
 const Subtitle = styled.p`
   ${props => props.theme.font_size.small};
+  opacity: 0.6;
   color: ${props => props.theme.color.black.light};
 `;
 

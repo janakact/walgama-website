@@ -46,7 +46,7 @@ const UsedBy = () => (
       query {
         art_story: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
+          name: { eq: "a4" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1200) {
@@ -57,19 +57,20 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="brands">
+        <Art>
+          <Img fluid={data.art_story.childImageSharp.fluid} />
+        </Art>
         <StyledContainer>
-          <div>
+          {/* <div>
             <h1>Used by biggest in tech</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink href={link}>{logo()}</ExternalLink>
               ))}
             </LogoGrid>
-          </div>
-          <Art>
-            <Img fluid={data.art_story.childImageSharp.fluid} />
-          </Art>
+          </div> */}
+          <h1>Lol</h1>
         </StyledContainer>
       </Section>
     )}
@@ -77,48 +78,36 @@ const UsedBy = () => (
 );
 
 const LogoGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 64px;
-  justify-items: center;
-  margin-top: 96px;
-
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 64px;
+      justify-items: center;
+      margin-top: 96px;
+    
   a {
-    svg {
-      width: 100%;
+          svg {
+        width: 100%;
+      }
     }
-  }
-
+  
   @media (max-width: ${props => props.theme.screen.sm}) {
-    grid-template-columns: 1fr;
-  }
-`;
+          grid - template - columns: 1fr;
+      }
+    `;
 
 const StyledContainer = styled(Container)`
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-
+      display: flex;
+      justify-content: flex-end;
+    
   @media (max-width: ${props => props.theme.screen.md}) {
-    justify-content: center;
-  }
-`;
+          justify - content: center;
+      }
+    `;
 
 const Art = styled.figure`
-  width: 600px;
+  margin:0;
+  width: 100%;
   position: absolute;
-  top: -12%;
-  right: 50%;
-
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 0;
-    right: 65%;
-    width: 500px;
-  }
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
-  }
 `;
 
 export default UsedBy;

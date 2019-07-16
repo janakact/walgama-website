@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
   h1, h2, h3, p {
     margin: 0;
     font-weight: normal;
+    opacity: 0.5;
   }
 
   h1, h2 {
