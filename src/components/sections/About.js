@@ -48,27 +48,31 @@ const About = () => (
         <Container>
           <Grid inverse>
             <Art>
-              <Img fluid={data.founder.childImageSharp.fluid} />
+              <Img fluid={data.logo_post.childImageSharp.fluid} />
             </Art>
+            <div>
+              <h2>Our Vision</h2>
+              <p>
+                <ul>
+                  <li>
+                    Adding modern technology to our products.
+                  </li>
+                  <li> Expansion of our products throughout the country and abroad.</li>
+                  <li>To be a leading institute in the field of Ayurveda.</li>
+                  <li>Our objective is to contribute to the cure of patients by introducing new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines</li>
+                </ul>
+              </p>
+            </div>
+          </Grid>
+          <Grid>
             <div>
               <h2>History</h2>
               <p>
                 The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).
               </p>
             </div>
-          </Grid>
-          <Grid >
-            <div>
-              <h2>Our Vision</h2>
-              <p>
-                Adding modern technology to our products.<br />
-                Expansion of our products throughout the country and abroad.<br />
-                To be a leading institute in the field of Ayurveda.<br />
-                Our objective is to contribute to the cure of patients by introducing new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines.
-              </p>
-            </div>
             <Art>
-              <Img fluid={data.logo_post.childImageSharp.fluid} />
+              <Img fluid={data.founder.childImageSharp.fluid} />
             </Art>
           </Grid>
           <Grid inverse>

@@ -21,8 +21,8 @@ const Header = () => (
     query={graphql`
       query {
         p1: file(
-          sourceInstanceName: { eq: "product" }
-          name: { eq: "lasunu2" }
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "a1" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -31,8 +31,8 @@ const Header = () => (
           }
         }
         p2: file(
-          sourceInstanceName: { eq: "product" }
-          name: { eq: "pawatta thalsukiri" }
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "a3" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -45,31 +45,10 @@ const Header = () => (
     render={data => (
       <HeaderWrapper>
         <Container>
-          <Carousel>
-            <Grid>
-              <Img fluid={data.p1.childImageSharp.fluid} />
-              <Text>
-                <h1 style={{ color: 'red' }}>
-                  ශ්‍රී ලසුනු පද්ම තෛලය
-                </h1>
-                <p>
-                  හිසරදය වහා සමනය කරන පාරම්පරික ඖෂධීය තෛලය.
-                </p>
-              </Text>
-            </Grid>
-            <Grid>
-              <Img fluid={data.p2.childImageSharp.fluid} />
-              <Text>
-                <h1 style={{ color: 'green' }}>
-                  පාවට්ටා තල් සූකිරි පැණිය
-                </h1>
-                <br />
-                <p>
-                  More details
-                </p>
-              </Text>
-            </Grid>
-          </Carousel>
+          <Img fluid={data.p1.childImageSharp.fluid} />
+          {/* <Carousel>
+            <Img fluid={data.p2.childImageSharp.fluid} />
+          </Carousel> */}
         </Container>
       </HeaderWrapper>
     )}
