@@ -8,6 +8,7 @@ import Carousel from 'nuka-carousel';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import Slider from '../common/Navbar/Slider';
 const settings = {
   dots: true,
   infinite: true,
@@ -62,23 +63,46 @@ const Header = () => (
         }
       }
     `}
-    render={data => (
-      <HeaderWrapper>
-        <Container>
-          <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding:100, backgroundColor:'rgba(0,0,0,0.5)', width:'100%' }}>Something</div>}>
-            <Img style={{ maxHeight: 800 }} fluid={data.p1.childImageSharp.fluid} />
-            <Img style={{ maxHeight: 800 }} fluid={data.p2.childImageSharp.fluid} />
-            <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
-            <Img style={{ maxHeight: 800 }} fluid={data.p4.childImageSharp.fluid} />
-          </Carousel>
-        </Container>
-      </HeaderWrapper>
-    )}
+    render={data => {
+      const items = [1, 2, 3, 4].map(i => ({ fluid: data[`p${i}`].childImageSharp.fluid, ...slideDetails[i] }));
+      return (
+        <HeaderWrapper>
+          <Container>
+            <Slider items={items}>
+
+            </Slider>
+            {/* <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding: 100, backgroundColor: 'rgba(0,0,0,0.5)', width: '100%' }}>Something</div>}>
+              <Img style={{ maxHeight: 800 }} fluid={data.p1.childImageSharp.fluid} />
+              <Img style={{ maxHeight: 800 }} fluid={data.p2.childImageSharp.fluid} />
+              <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
+              <Img style={{ maxHeight: 800 }} fluid={data.p4.childImageSharp.fluid} />
+            </Carousel> */}
+          </Container>
+        </HeaderWrapper>
+      )
+    }}
   />
 );
 
 
-
+const slideDetails = {
+  1: {
+    title: "Gugguladi",
+    description: "Some Description"
+  },
+  2: {
+    title: "Lili",
+    description: "lili Description"
+  },
+  3: {
+    title: "Maha Nilyadi",
+    description: "Some Description"
+  },
+  4: {
+    title: "Lasunu",
+    description: "Some Description"
+  },
+}
 
 // background-color: ${props => props.theme.color.primary};
 const HeaderWrapper = styled.header`
