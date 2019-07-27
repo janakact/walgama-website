@@ -18,8 +18,8 @@ export default function Slider({ items, duration = 5000 }) {
 
 const SlideItem = ({ visible, item }) =>
     <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '80vh', width: '80vw', backgroundColor: 'white', position: 'absolute' }}>
-        <div style={{ width: '80vw', height: '80vh' }}>
-            <Img fadeIn fluid={item.fluid} />
+        <div style={{ width: '80vw', height: '100%', position: 'relative' }}>
+            <Img fadeIn fluid={item.fluid} style={{ height: '100%' }} imgStyle={{ objectFit: 'contain' }} />
         </div>
         <DescriptionBox>
             <h2>{item.title}</h2>
@@ -48,8 +48,8 @@ const Button = styled.button`
 `;
 
 const DescriptionBox = styled.div`
-  top: 50%;
-  right: 30%;
+  top: 5%;
+  left: 3%;
   position: absolute;
   padding: 30px;
   border-radius: 10px;  
