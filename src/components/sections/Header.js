@@ -21,6 +21,18 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
+        allFile(filter: { sourceInstanceName: { eq: "product" } }) {
+          edges {
+            node {
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 1400, maxHeight: 1200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         p1: file(
           sourceInstanceName: { eq: "product" }
           name: { eq: "gugguladi" }
@@ -64,7 +76,11 @@ const Header = () => (
       }
     `}
     render={data => {
-      const items = [1, 2, 3, 4].map(i => ({ fluid: data[`p${i}`].childImageSharp.fluid, ...slideDetails[i] }));
+      const items = SLIDE_ITEMS.map((item, i) => ({
+        fluid: data.allFile.edges.find(
+          ({ node }) => node.relativePath === item.image
+        ).node.childImageSharp.fluid, ...item
+      }));
       return (
         <HeaderWrapper>
           <Container>
@@ -85,24 +101,35 @@ const Header = () => (
 );
 
 
-const slideDetails = {
-  1: {
-    title: "Gugguladi",
-    description: "Some Description"
+const SLIDE_ITEMS = [
+  {
+    name: 'භෘංගරාජ තෛලය',
+    description: "භෘංගරාජ් තෛලය පිළිබඳ විස්තරයක්",
+    color1: 'brown',
+    color2: '#f3cd16',
+    image: 'brungaraja.jpg',
   },
-  2: {
-    title: "Lili",
-    description: "lili Description"
+  {
+    name: 'ගැස්ට්‍රයිටීස් අම්ලපිත සුවය',
+    image: 'Gastritis.jpg',
   },
-  3: {
-    title: "Maha Nilyadi",
-    description: "Some Description"
+  {
+    name: 'කැස්ස පැණිය',
+    image: 'kassa paniya.jpg',
   },
-  4: {
-    title: "Lasunu",
-    description: "Some Description"
+  {
+    name: 'නීල්‍යාදී තෛලය',
+    image: 'lily.jpg',
   },
-}
+  {
+    name: 'ජීවශක්ති රසායනය',
+    image: 'jeewashakthi.jpg',
+  },
+  {
+    name: 'ගුග්ගුලාදී තෛලය',
+    image: 'gugguladi.jpg',
+  },
+]
 
 // background-color: ${props => props.theme.color.primary};
 const HeaderWrapper = styled.header`

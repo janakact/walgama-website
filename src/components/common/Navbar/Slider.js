@@ -7,7 +7,7 @@ export default function Slider({ items, duration = 5000 }) {
     const [selected, setSelected, next, previous] = useSlider(items.length, duration);
     return (
         <div>
-            <div style={{ width: '100%', height: '80vh', position: 'relative' }}>
+            <div style={{ width: '100%', height: '90vh', position: 'relative' }}>
                 {items.map((item, i) => <SlideItem item={item} visible={i === selected} />)}
                 <Button style={{ left: 5 }} onClick={previous}> {'<'} </Button>
                 <Button style={{ right: 5 }} onClick={next}> {'>'} </Button>
@@ -17,14 +17,14 @@ export default function Slider({ items, duration = 5000 }) {
 }
 
 const SlideItem = ({ visible, item }) =>
-    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '80vh', width: '80vw', backgroundColor: 'white', position: 'absolute' }}>
-        <div style={{ width: '80vw', height: '100%', position: 'relative' }}>
+    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '90vh', width: '100%', backgroundColor: 'white', position: 'absolute' }}>
+        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
             <Img fadeIn fluid={item.fluid} style={{ height: '100%' }} imgStyle={{ objectFit: 'contain' }} />
         </div>
-        <DescriptionBox>
-            <h2>{item.title}</h2>
-            <p>{item.description}</p>
-        </DescriptionBox>
+        <DescBoxAnimated style={{ position: 'absolute', top: 10 }} pose={visible ? 'visible' : 'hidden'} >
+            <h2 style={{ color: item.color1 }}>{item.name}</h2>
+            <p style={{ color: item.color2 }}>{item.description}</p>
+        </DescBoxAnimated>
     </Box>
 
 
@@ -43,19 +43,29 @@ const useSlider = (count, duration) => {
 const Button = styled.button`
   top: 50%;
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   position: absolute;
-  background-color: yellow;
+  border-radius: 10px;
+  color: green;
+  background-color: rgba(0,200,0,0.2);
 `;
 
 const DescriptionBox = styled.div`
-  top: 5%;
+  top: 20;
   left: 3%;
   position: absolute;
-  padding: 30px;
-  border-radius: 10px;  
-  background-color: rgba(0,0,0,0.1);
+  padding: 10px;
+//   color: white;
+  border-radius: 5px;
+//   background-color: rgba(0,0,0,0.8);
 `;
 const Box = posed.div({
-    visible: { opacity: 1 },
-    hidden: { opacity: 0 }
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 }
+});
+
+const DescBoxAnimated = posed.div({
+    visible: { opacity: 1, y: 0, delay: 300 },
+    hidden: { opacity: 0, y: 100, delay: 300 }
 });

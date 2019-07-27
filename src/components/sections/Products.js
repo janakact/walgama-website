@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
-const TEAM = [
+const PRODUCTS = [
   {
     name: 'භෘංගරාජ තෛලය',
     image: 'brungaraja.jpg',
@@ -105,7 +105,7 @@ const TEAM = [
   // },
 ];
 
-const Team = () => (
+const Products = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -138,14 +138,14 @@ const Team = () => (
         <Container style={{ position: 'relative' }}>
           <h1>Products</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {PRODUCTS.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
                 <div>
-                  <Img style={{borderRadius: '100%', borderColor:'rgba(0,0,0,0.1)', borderWidth: 1, borderStyle: 'solid'}} fluid={img.childImageSharp.fluid} alt={name} />
+                  <Img style={{ borderRadius: '100%', borderColor: 'rgba(0,200,0,0.1)', borderWidth: 4, borderStyle: 'solid' }} fluid={img.childImageSharp.fluid} alt={name} />
                   <Title>{name}</Title>
                   <Subtitle>{role}</Subtitle>
                 </div>
@@ -223,4 +223,4 @@ const Subtitle = styled.p`
   color: ${props => props.theme.color.black.light};
 `;
 
-export default Team;
+export default Products;
