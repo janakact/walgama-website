@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import posed from 'react-pose';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+import { Parallax } from 'react-scroll-parallax';
 
 export default function Slider({ items, duration = 5000 }) {
     const [selected, setSelected, next, previous] = useSlider(items.length, duration);
     return (
         <div>
-            <div style={{ width: '100%', height: '100vh', position: 'relative'}}>
+            <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
                 {items.map((item, i) => <SlideItem item={item} visible={i === selected} />)}
                 <Button style={{ left: 5 }} onClick={previous}> {'<'} </Button>
                 <Button style={{ right: 5 }} onClick={next}> {'>'} </Button>
@@ -17,17 +18,19 @@ export default function Slider({ items, duration = 5000 }) {
 }
 
 const SlideItem = ({ visible, item }) =>
-    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '90vh', width: '100%',position: 'absolute', backgroundColor: item.backgroundColor  }}>
-``
-        <BoxImage style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <Img fadeIn fluid={item.fluid} style={{ height: '80%' }} imgStyle={{ objectFit: 'contain' }} />
+    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '90vh', width: '100%', position: 'absolute' }}>
+        <BoxImage style={{ width: '100%', height: '100%', position: 'relative', zIndex: -1 }}>
+            <Img fadeIn fluid={item.fluid} style={{ height: '100%' }} imgStyle={{ objectFit: 'cover' }} />
         </BoxImage>
-        <DescBoxAnimated style={{ position: 'absolute', bottom: 100, width:'100%', textAlign: 'center'}} pose={visible ? 'visible' : 'hidden'} >
-            <h2 style={{ color: item.color1 }}>{item.name}</h2>            
 
-            <p style={{ color: item.color2, fontSize: 40 }} className="sinhala-font">{item.description}</p>
-        </DescBoxAnimated>
-    </Box>
+        <div style={{ position: 'absolute', bottom: 0, padding: 30, width: '100%', textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.4)' }}>
+            <DescBoxAnimated style={{}} pose={visible ? 'visible' : 'hidden'} >
+
+                <h2 style={{ color: item.color1 }}>{item.name}</h2>
+                <p style={{ color: item.color2, fontSize: 40 }} className="sinhala-font">{item.description}</p>
+            </DescBoxAnimated>
+        </div>
+    </Box >
 
 
 const useSlider = (count, duration) => {
@@ -63,12 +66,16 @@ const DescriptionBox = styled.div`
 //   background-color: rgba(0,0,0,0.8);
 `;
 const Box = posed.div({
-    visible: { opacity: 1, x: 0, 
-    transition: { duration: 1000 } },
-    hidden: { opacity: 0, x: 0,
-    transition: { duration: 1000 } },
+    visible: {
+        opacity: 1, x: 0,
+        transition: { duration: 1000 }
+    },
+    hidden: {
+        opacity: 0, x: 0,
+        transition: { duration: 1000 }
+    },
 
-}, );
+});
 
 const BoxImage = posed.div({
     visible: { opacity: 1, x: 0 },

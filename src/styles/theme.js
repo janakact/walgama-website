@@ -1,7 +1,7 @@
 const theme = {
   font: {
-    primary: `'Roboto', sans-serif`,
-    secondary: `'Roboto', sans-serif`,
+    primary: `'Lato', sans-serif`,
+    secondary: `'Lato', sans-serif`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',

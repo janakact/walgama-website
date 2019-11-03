@@ -4,6 +4,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-svgr`,
+    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -22,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `product`,
-        path: `${__dirname}/src/images/art/products`,
+        name: `products`,
+        path: `${__dirname}/src/images/products`,
       },
     },
     {
@@ -46,7 +47,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
+        name: `Walgama`,
         short_name: `absurd`,
         start_url: `/`,
         background_color: `#8bd8ed`,
@@ -58,7 +59,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`average`, `prata\:400,700`],
+        fonts: [`average`, `prata\:400,700`, 'Lato'],
       },
     },
     {

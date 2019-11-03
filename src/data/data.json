@@ -1,0 +1,79 @@
+{
+    "slides": [
+        {
+            "name": "Experienced well trained staff",
+            "description": "w;aoelSï nyq, ukd mqyqKq ld¾Hh uKav,h",
+            "color1": "brown",
+            "color2": "#f3cd16",
+            "backgroundColor": "gray",
+            "image": "l1.jpg"
+        },
+        {
+            "name": "Cleanliness and high quality ",
+            "description": "iqmsßisÿ nj iy by, .=Kd;aul nj",
+            "backgroundColor": "#f6dc8b",
+            "color1": "white",
+            "color2": "#f3cd16",
+            "image": "l2.jpg"
+        },
+        {
+            "name": "Under the prescribed standards ",
+            "description": "kshñ; m%ñ;s ;;ajhkag hg;aj",
+            "backgroundColor": "#f6dc8b",
+            "color1": "white",
+            "color2": "#f3cd16",
+            "image": "3.png"
+        },
+        {
+            "name": "Dosage of prescribed herbal medicines ",
+            "description": "ksjerÈ Ydl!IO ud;%dkql+,j fh¥'",
+            "backgroundColor": "brown",
+            "color1": "white",
+            "color2": "#f3cd16",
+            "image": "4.png"
+        },
+        {
+            "name": "More than 142 Ayurvedic  products",
+            "description": "142lg wêl wdhq¾fõo ksIamdok",
+            "backgroundColor": "white",
+            "color1": "brown",
+            "color2": "#f3cd16",
+            "image": "5.png"
+        }
+    ],
+    "about": {
+        "company": "Walgama",
+        "history": "The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).",
+        "vision": [
+            "Adding modern technology to our products.",
+            "Expansion of our products throughout the country and abroad.",
+            "To be a leading institute in the field of Ayurveda.",
+            "Our objective is to contribute to the cure of patients by introducing new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines."
+        ],
+        "services": [
+            "Our products ordering service is available anywhere in the country.",
+            "Provision of  Ayurvedic medicines to Ayurvedic Doctors.",
+            "Ayurvedic medical centers for further treatments.",
+            "Ayurvedic Pharmaceutical raw materials supply service for the registered Doctors at our institution."
+        ]
+    },
+    "products": [
+        {
+            "name": "Mahanarayana Oil",
+            "nameSinhala": "uyd kdrdhk ff;,h",
+            "ingedients": "",
+            "bestFor": "Paralysis, Head ailments, Muscles & joints pain due to Vata dosha. Ingredients- Rhizome of Hathavariya (Asparagus racemosus), Dashamul & Sesame oil",
+            "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed. Daily can be used for body massage & used for Nasya, Drink & Enema as directed by the physician.",
+            "packSize": "28ml/185ml/750ml/4500ml",
+            "descriptionSinhala": "yd;djdßh w,\"oYuq,a yd ;,f;,a ixfhda.fhka ksmojd we;s fuu ff;,h wxYNd. YS¾I frda. fmaYs yd ixê .; jd; fõokd wjia:d j,§ ndysßka wdf,am lrkak¡isrer iïndykh i|yd Èkm;d Ndú;d l, yel¡ffjoH Wmfoia u; kiH\"mdk\"jia;s i|yd Ndú;d l, yel¡",
+            "image": "1.png"
+        },
+        {
+            "name": "Gugguladi oil",
+            "nameSinhala": "ගුග්ගුලාදී තෛලය",
+            "ingedients": "",
+            "bestFor": "Vericose,Arthritis,Knee pain, Back pain,Relives tight & soremuscles,Relives Joint stifness and all Vata dosha based pain.",
+            "image": "2.png"
+        }
+    ]
+}

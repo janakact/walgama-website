@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+
 import Layout from '@common/Layout';
 import Navbar from '@common/Navbar';
 
@@ -12,14 +14,16 @@ import Footer from '@sections/Footer';
 
 const IndexPage = () => (
   <Layout>
+
     <Navbar />
     <Header />
     <Products />
     <About />
     {/* <Brands /> */}
     {/* <Faq /> */}
+
     <Footer />
-  </Layout>
+  </Layout >
 );
 
 export default IndexPage;

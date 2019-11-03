@@ -33,10 +33,24 @@ const Header = () => (
             }
           }
         }
+        allDataJson{
+            edges{
+               node{
+                 slides {
+                   name
+                   description
+                   color1
+                   color2
+                   backgroundColor
+                   image
+                }
+              }
+            }
+        }
       }
     `}
     render={data => {
-      const items = SLIDE_ITEMS.map((item, i) => ({
+      const items = data.allDataJson.edges[0].node.slides.map((item, i) => ({
         fluid: data.allFile.edges.find(
           ({ node }) => node.relativePath === item.image
         ).node.childImageSharp.fluid, ...item
@@ -44,10 +58,10 @@ const Header = () => (
       return (
         <HeaderWrapper>
           {/* <Container> */}
-            <Slider items={items}>
+          <Slider items={items}>
 
-            </Slider>
-            {/* <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding: 100, backgroundColor: 'rgba(0,0,0,0.5)', width: '100%' }}>Something</div>}>
+          </Slider>
+          {/* <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding: 100, backgroundColor: 'rgba(0,0,0,0.5)', width: '100%' }}>Something</div>}>
               <Img style={{ maxHeight: 800 }} fluid={data.p1.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p2.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
@@ -73,7 +87,7 @@ const SLIDE_ITEMS = [
   {
     name: 'Cleanliness and high quality ',
     description: "iqmsßisÿ nj iy by, .=Kd;aul nj'",
-    backgroundColor: 'blue',
+    backgroundColor: '#f6dc8b',
     color1: 'brown',
     color2: '#f3cd16',
     image: '2.png',

@@ -30,7 +30,8 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
-  padding: 88px 0;
+  padding: 30px 0;
+  background-color: white;
   overflow: hidden;
 
   @media (max-width: ${props => props.theme.screen.md}) {
