@@ -7,7 +7,7 @@ export default function Slider({ items, duration = 5000 }) {
     const [selected, setSelected, next, previous] = useSlider(items.length, duration);
     return (
         <div>
-            <div style={{ width: '100%', height: '90vh', position: 'relative' }}>
+            <div style={{ width: '100%', height: '100vh', position: 'relative'}}>
                 {items.map((item, i) => <SlideItem item={item} visible={i === selected} />)}
                 <Button style={{ left: 5 }} onClick={previous}> {'<'} </Button>
                 <Button style={{ right: 5 }} onClick={next}> {'>'} </Button>
@@ -17,13 +17,15 @@ export default function Slider({ items, duration = 5000 }) {
 }
 
 const SlideItem = ({ visible, item }) =>
-    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '90vh', width: '100%', backgroundColor: 'white', position: 'absolute' }}>
-        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <Img fadeIn fluid={item.fluid} style={{ height: '100%' }} imgStyle={{ objectFit: 'contain' }} />
-        </div>
-        <DescBoxAnimated style={{ position: 'absolute', top: 10 }} pose={visible ? 'visible' : 'hidden'} >
-            <h2 style={{ color: item.color1 }}>{item.name}</h2>
-            <p style={{ color: item.color2 }}>{item.description}</p>
+    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '90vh', width: '100%',position: 'absolute', backgroundColor: item.backgroundColor  }}>
+``
+        <BoxImage style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <Img fadeIn fluid={item.fluid} style={{ height: '80%' }} imgStyle={{ objectFit: 'contain' }} />
+        </BoxImage>
+        <DescBoxAnimated style={{ position: 'absolute', bottom: 100, width:'100%', textAlign: 'center'}} pose={visible ? 'visible' : 'hidden'} >
+            <h2 style={{ color: item.color1 }}>{item.name}</h2>            
+
+            <p style={{ color: item.color2, fontSize: 40 }} className="sinhala-font">{item.description}</p>
         </DescBoxAnimated>
     </Box>
 
@@ -47,8 +49,8 @@ const Button = styled.button`
   padding-right: 20px;
   position: absolute;
   border-radius: 10px;
-  color: green;
-  background-color: rgba(0,200,0,0.2);
+  color: white;
+  background-color: rgba(0, 0,0,0.2);
 `;
 
 const DescriptionBox = styled.div`
@@ -61,6 +63,14 @@ const DescriptionBox = styled.div`
 //   background-color: rgba(0,0,0,0.8);
 `;
 const Box = posed.div({
+    visible: { opacity: 1, x: 0, 
+    transition: { duration: 1000 } },
+    hidden: { opacity: 0, x: 0,
+    transition: { duration: 1000 } },
+
+}, );
+
+const BoxImage = posed.div({
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: -100 }
 });

@@ -21,55 +21,15 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "product" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "slider" } }) {
           edges {
             node {
               relativePath
               childImageSharp {
-                fluid(maxWidth: 1400, maxHeight: 1200) {
+                fluid(maxWidth: 2400, maxHeight: 1600) {
                   ...GatsbyImageSharpFluid
                 }
               }
-            }
-          }
-        }
-        p1: file(
-          sourceInstanceName: { eq: "product" }
-          name: { eq: "gugguladi" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-        p2: file(
-          sourceInstanceName: { eq: "product" }
-          name: { eq: "lily" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-        p3: file(
-          sourceInstanceName: { eq: "product" }
-          name: { eq: "mahaneelyadi" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-        p4: file(
-          sourceInstanceName: { eq: "product" }
-          name: { eq: "lasunu" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
@@ -83,7 +43,7 @@ const Header = () => (
       }));
       return (
         <HeaderWrapper>
-          <Container>
+          {/* <Container> */}
             <Slider items={items}>
 
             </Slider>
@@ -93,7 +53,7 @@ const Header = () => (
               <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p4.childImageSharp.fluid} />
             </Carousel> */}
-          </Container>
+          {/* </Container> */}
         </HeaderWrapper>
       )
     }}
@@ -103,39 +63,68 @@ const Header = () => (
 
 const SLIDE_ITEMS = [
   {
-    name: 'භෘංගරාජ තෛලය',
-    description: "භෘංගරාජ් තෛලය පිළිබඳ විස්තරයක්",
+    name: 'Experienced well trained staff ',
+    description: "w;aoelSï nyq, ukd mqyqKq ld¾Hh uKav,h",
     color1: 'brown',
     color2: '#f3cd16',
-    image: 'brungaraja.jpg',
+    backgroundColor: 'gray',
+    image: '1.png',
   },
   {
-    name: 'ගැස්ට්‍රයිටීස් අම්ලපිත සුවය',
-    image: 'Gastritis.jpg',
+    name: 'Cleanliness and high quality ',
+    description: "iqmsßisÿ nj iy by, .=Kd;aul nj'",
+    backgroundColor: 'blue',
+    color1: 'brown',
+    color2: '#f3cd16',
+    image: '2.png',
   },
   {
-    name: 'කැස්ස පැණිය',
-    image: 'kassa paniya.jpg',
+    name: 'Under the prescribed standards ',
+    description: "kshñ; m%ñ;s ;;ajhkag hg;aj'",
+    backgroundColor: '#f6dc8b',
+    color1: 'brown',
+    color2: '#f3cd16',
+    image: '3.png',
   },
   {
-    name: 'නීල්‍යාදී තෛලය',
-    image: 'lily.jpg',
+    name: 'Dosage of prescribed herbal medicines ',
+    description: "ksjerÈ Ydl!IO ud;%dkql+,j fh¥'",
+    backgroundColor: 'brown',
+    color1: 'brown',
+    color2: '#f3cd16',
+    image: '4.png',
   },
   {
-    name: 'ජීවශක්ති රසායනය',
-    image: 'jeewashakthi.jpg',
+    name: 'More than 142 Ayurvedic  products',
+    description: "142lg wêl wdhq¾fõo ksIamdok",
+    backgroundColor: 'white',
+    color1: 'brown',
+    color2: '#f3cd16',
+    image: '5.png',
   },
-  {
-    name: 'ගුග්ගුලාදී තෛලය',
-    image: 'gugguladi.jpg',
-  },
+  // {
+  //   name: 'කැස්ස පැණිය',
+  //   image: 'kassa paniya.jpg',
+  // },
+  // {
+  //   name: 'නීල්‍යාදී තෛලය',
+  //   image: 'lily.jpg',
+  // },
+  // {
+  //   name: 'ජීවශක්ති රසායනය',
+  //   image: 'jeewashakthi.jpg',
+  // },
+  // {
+  //   name: 'ගුග්ගුලාදී තෛලය',
+  //   image: 'gugguladi.jpg',
+  // },
 ]
 
 // background-color: ${props => props.theme.color.primary};
 const HeaderWrapper = styled.header`
-  padding-top: 96px;
+  padding-top: 72px;
   @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
+    padding-top: 72px;
   }
 `;
 

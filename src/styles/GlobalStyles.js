@@ -7,6 +7,11 @@ const normalize = `
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
+  @font-face { font-family: SinhalaAstro; src: url('fonts/astro11.ttf'); } 
+  .sinhala-font {
+    font-family: SinhalaAstro
+  }
+
   body {
     font-family: ${props => props.theme.font.secondary};
   }
