@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 import Product from '../common/Product';
+import { Panel } from '../global';
 
 // const PRODUCTS = [
 //   {
@@ -159,30 +160,33 @@ const Products = () => (
     render={data => (
       <Section id="products">
         <Container style={{ position: 'relative' }}>
-          <h1>Products</h1>
-          {
-            data.allDataJson.edges[0].node.products.map(
-              cat => {
+          <Panel dark>
 
-                return <div>
-                  <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
-                  <h3 style={{ marginTop:-10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
-                  <ProductGrid>
-                    {cat.products.map(
-                      (item) => {
-                        const img = data.allFile.edges.find(
-                          ({ node }) => node.relativePath === item.image
-                        ).node;
+            <h1>Products</h1>
+            {
+              data.allDataJson.edges[0].node.products.map(
+                cat => {
 
-                        return (
-                          <Product {...item} img={img} />
-                        );
-                      })
-                    }
-                  </ProductGrid>
-                </div>
-              })
-          }
+                  return <div>
+                    <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
+                    <h3 style={{ marginTop: -10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
+                    <ProductGrid>
+                      {cat.products.map(
+                        (item) => {
+                          const img = data.allFile.edges.find(
+                            ({ node }) => node.relativePath === item.image
+                          ).node;
+
+                          return (
+                            <Product {...item} img={img} />
+                          );
+                        })
+                      }
+                    </ProductGrid>
+                  </div>
+                })
+            }
+          </Panel>
         </Container>
       </Section>
     )}

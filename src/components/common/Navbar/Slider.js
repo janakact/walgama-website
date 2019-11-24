@@ -20,10 +20,10 @@ export default function Slider({ items, duration = 5000 }) {
 const SlideItem = ({ visible, item }) =>
     <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '50vh', width: '100%', position: 'absolute' }}>
         <BoxImage style={{ width: '100%', height: '100%', position: 'relative', zIndex: -1 }}>
-            <Img fadeIn fluid={item.fluid} style={{ height: '100%', borderRadius: 20 }} imgStyle={{ objectFit: 'cover' }} />
+            <Img fadeIn fluid={item.fluid} style={{ height: '100%', borderRadius: 10 }} imgStyle={{ objectFit: 'cover' }} />
         </BoxImage>
 
-        <div style={{ position: 'absolute', bottom: 0, left:0, right: 0, padding: 30, borderRadius: 20 , margin: 10, textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        <div style={{ position: 'absolute', top: 0, left:0, right: 0, padding: 30, borderRadius: 10 , margin: 10, textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.4)' }}>
             <DescBoxAnimated style={{}} pose={visible ? 'visible' : 'hidden'} >
 
                 <h2 style={{ color: item.color1 }}>{item.name}</h2>

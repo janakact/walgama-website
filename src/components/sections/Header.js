@@ -9,6 +9,7 @@ import Carousel from 'nuka-carousel';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 import Slider from '../common/Navbar/Slider';
+import { getImage } from '../../lib/getImage';
 const settings = {
   dots: true,
   infinite: true,
@@ -51,17 +52,15 @@ const Header = () => (
     `}
     render={data => {
       const items = data.allDataJson.edges[0].node.slides.map((item, i) => ({
-        fluid: data.allFile.edges.find(
-          ({ node }) => node.relativePath === item.image
-        ).node.childImageSharp.fluid, ...item
+        fluid: getImage(data.allFile, item.image), ...item
       }));
       return (
         <HeaderWrapper>
           <Container>
-          <Slider items={items}>
+            <Slider items={items}>
 
-          </Slider>
-          {/* <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding: 100, backgroundColor: 'rgba(0,0,0,0.5)', width: '100%' }}>Something</div>}>
+            </Slider>
+            {/* <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding: 100, backgroundColor: 'rgba(0,0,0,0.5)', width: '100%' }}>Something</div>}>
               <Img style={{ maxHeight: 800 }} fluid={data.p1.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p2.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />

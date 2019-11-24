@@ -43,18 +43,25 @@
     ],
     "about": {
         "company": "Walgama",
-        "history": "The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).",
-        "vision": [
-            "Adding modern technology to our products.",
-            "Expansion of our products throughout the country and abroad.",
-            "To be a leading institute in the field of Ayurveda.",
-            "Our objective is to contribute to the cure of patients by introducing new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines."
-        ],
-        "services": [
-            "Our products ordering service is available anywhere in the country.",
-            "Provision of  Ayurvedic medicines to Ayurvedic Doctors.",
-            "Ayurvedic medical centers for further treatments.",
-            "Ayurvedic Pharmaceutical raw materials supply service for the registered Doctors at our institution."
+        "aboutEnglish": "The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures, Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).",
+        "founderImage": "founder.jpg",
+        "aboutSinhala": "j¾I 1952 § tï'ã'cS rEm;=x. fjouy;d ^j,a.u fjouy;d& úiska wdrïN lrk ,o j,a.u wdhq¾fõo T!IO ksIamdok wdh;kh úiska wdhq¾fõ§h ff;,\" wßIaG\" wdij\" mdKaG fukau úfYaI frda. i|yd .=K fok wdhq¾fõo T!IO ksIamdok lghq;= isÿ lrhs' fï i|yd foaYSh yd wdkhksl .=Kd;aul T!Iëh wuqøjH fhdod .kakd w;r fï jk úg wdhq¾fõo ksIamdok j¾. 143 lg jeä m%udKhla ksIamdokh iy fnodyeÍfï ls%hdj,sh wLKavj isÿ lrkq ,efí' 2012 j¾Ifha isg mqoaa.,sl iud.ula f,i ;u  ksIamdok lghq;= Y%S ,xld m%ñ;s wdh;kfha ;;a;aj iy;slhkag hg;aj isÿlrkq ,nhs' ",
+        "objectiveEnglish": "Our objective is to contribute to the cure of patients by introducing  new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines",
+        "objectiveSinhala": ".=Kd;aul yd iqmsßisÿ wdhq¾fõo T!IO ksIamdokh\"fnod yeÍu iy kj wdhq¾fõo T!IO fj<|m,g yÿkajd foñka frda.Skaf.a frda. iqjm;a lsÍug odhl ùu wmf.a wruqKhs'",
+        "visionEnglish": "Adding modern technology to our products. Expansion of our products throughout the country and abroad. To be a leading institute in the field of Ayurveda.",
+        "visionSinhala": "wmf.a ksIamdok i|yd kj ;dËKh uqiqlsÍu wmf.a ksIamdok Èjhsk mqrd fukau úfoia rg j,g o jHdma; lsÍu wdhq¾fõo fËa;%fha m%uqLfmf,a wdh;khla ùu wmf.a oelauhs",
+        "achievements": [
+            {
+                "english": "Emerging EnterpreneurOf the year 2014",
+                "sinhala": "jif¾ ke.S tk wdhq¾fõo ksIamdok  wdh;kh 2014 jir",
+                "image":"award1.png"
+
+            },
+            {
+                "english": "Young Enterpreneurof  the year 2018 Gold award",
+                "sinhala": "jif¾ úYsIaG;u ;reK jHjidhlhd  rka iïudkh 2018 jir",
+                "image":"award2.png"
+            }
         ]
     },
     "products": [

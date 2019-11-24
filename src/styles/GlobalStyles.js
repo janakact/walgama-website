@@ -31,7 +31,6 @@ const GlobalStyles = createGlobalStyle`
 
   h1 {
     color: green;
-    background-color: rgba(0,200,0,0.1);
     padding: 10px;
     border-radius: 10px;
     ${props => props.theme.font_size.xlarge};
