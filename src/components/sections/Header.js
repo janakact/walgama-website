@@ -55,7 +55,7 @@ const Header = () => (
         fluid: getImage(data.allFile, item.image), ...item
       }));
       return (
-        <HeaderWrapper>
+        <HeaderWrapper  id="home">
             <Slider items={items}>
 
             </Slider>

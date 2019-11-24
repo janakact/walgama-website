@@ -16,7 +16,7 @@ import {
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import Logo from './Logo';
 
-const NAV_ITEMS = ['About', 'Products'];
+const NAV_ITEMS = ['Home', 'About', 'Products', 'Services', 'Contact Us'];
 
 class Navbar extends Component {
   state = {
@@ -59,7 +59,7 @@ class Navbar extends Component {
 
     return (
       <Nav {...this.props}>
-        <StyledContainer>
+        <StyledContainer style={{paddingLeft: 20}}>
           <Brand>
             <Logo />
             {/* <Img fluid={img.childImageSharp.fluid} alt={name} /> */}

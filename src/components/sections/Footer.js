@@ -54,7 +54,7 @@ const Footer = () => (
             style={{ width: 480, maxWidth: '100%' }}
           />
         </Art> */}
-        <Section accent>
+        <Section accent id="contact us">
 
           <Panel>
 
