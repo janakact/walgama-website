@@ -61,8 +61,8 @@ const Footer = () => (
             <FooterWrapper>
               <StyledContainer>
 
-                <div>Walgama Ayurveda, <br />
-                  Eheliyagoda, Sri Lanka</div>
+                <div>Walgama Ayurvedic Products (Private) Limited <br />
+                  Wiyalagoda,Eheliyagoda, Sri Lanka.</div>
                 <div>
                   Call: <span> </span>
                   <a style={{ textDecoration: 'none', color: 'white' }} href="tel:077 171 8875">
