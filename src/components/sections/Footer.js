@@ -78,15 +78,19 @@ const Footer = () => (
                   <a href="tel:077 171 8875" >
                     <WhatsappIcon round />
                   </a>
+                  {/* <ExternalLink href='https://www.instagram.com/walgamaayurveda/?hl=en'>
+                    <img height="200px" width="200px" color="white" src={InstagramIcon} alt="link" />
+                  </ExternalLink> */}
                 </SocialIcons>
 
                 {/* <SocialIcons> */}
                 {/* <InstapaperIcon /> */}
                 {/* {SOCIAL.map(({ icon, link }) => (
-                    <ExternalLink href={link}>
-                      <img color="white" src={icon} alt="link" />
-                    </ExternalLink>
-                  ))} */}
+                  <ExternalLink href={link}>
+                    <img color="white" src={icon} alt="link" />
+                  </ExternalLink>
+                ))
+                } */}
                 {/* </SocialIcons> */}
               </StyledContainer>
             </FooterWrapper>
