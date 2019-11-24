@@ -78,12 +78,22 @@
       "categoryNameSinhala": "ixê iy fmaYs i|yd",
       "products": [
         {
+          "name": "Vatha Widuranga Oil",
+          "nameSinhala": "",
+          "ingedients": "Babila (Sida cordifolia), Asamodhagam (Apium graveolens) & Sesame oil",
+          "bestFor": "Paralysis,disease due to vitiated Raktha(Blood) & Pitta,wounds, Joints pain due to fractures.",
+          "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "neì, uq,a\"wifudao.ï yd ;,f;,a ixfhda.fhka ksIamdÈ; fuu ff;,h wxYNd.\"r;ams;a frda.\";=jd,\"levqï ìÿï ksid yg.;a ixê fõokd\"weg kyr fmr,Sï j,§ ndysßka wdf,am lrkak",
+          "image": "watha widuranga.png"
+        },
+        {
           "name": "Shulahara Oil",
           "bestFor": "",
           "suggestedUse": "Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
           "packSize": "28ml/185ml/750ml/4500ml",
           "descriptionSinhala": "fiï fldamh ksid yg.kakd oE,jr fõokd jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
-          "image": "",
+          "image": "shulahara.png",
           "ingedients": "Mustard seeds, Mee thel,Wandu kapuru"
         },
         {
