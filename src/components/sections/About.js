@@ -160,7 +160,7 @@ const Grid = styled.div`
 
 const Text = styled.p`
         font-size: 30px;
-        opacity: 0.5;
+        opacity: 0.7;
         color: white
       `;
 

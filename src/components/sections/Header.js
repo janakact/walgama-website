@@ -56,7 +56,6 @@ const Header = () => (
       }));
       return (
         <HeaderWrapper>
-          <Container>
             <Slider items={items}>
 
             </Slider>
@@ -66,7 +65,6 @@ const Header = () => (
               <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p4.childImageSharp.fluid} />
             </Carousel> */}
-          </Container>
         </HeaderWrapper>
       )
     }}
@@ -135,7 +133,7 @@ const SLIDE_ITEMS = [
 
 // background-color: ${props => props.theme.color.primary};
 const HeaderWrapper = styled.header`
-  padding-top: 72px;
+  padding-top: 42px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 72px;
 

@@ -11,6 +11,7 @@ import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 import FacebookIcon from '@static/icons/facebook.svg';
 import Logo from '../common/Navbar/Logo';
+import { Panel } from '../global';
 
 const SOCIAL = [
   {
@@ -47,28 +48,31 @@ const Footer = () => (
             style={{ width: 480, maxWidth: '100%' }}
           />
         </Art> */}
-        <FooterWrapper>
-          <StyledContainer>
+        <Panel>
 
-            <div>
-              Walgama Ayurveda, <br />
-              Eheliyagoda, Sri Lanka
+          <FooterWrapper>
+            <StyledContainer>
+
+              <div>
+                Walgama Ayurveda, <br />
+                Eheliyagoda, Sri Lanka
             </div>
-            <div>
-              Call: <span> </span>
-              <a style={{ textDecoration: 'none', color: 'black' }} href="tel:077 171 8875">
-                077 171 8875
+              <div>
+                Call: <span> </span>
+                <a style={{ textDecoration: 'none', color: 'black' }} href="tel:077 171 8875">
+                  077 171 8875
              </a>
-            </div>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink href={link}>
-                  <img src={icon} alt="link" />
-                </ExternalLink>
-              ))}
-            </SocialIcons>
-          </StyledContainer>
-        </FooterWrapper>
+              </div>
+              <SocialIcons>
+                {SOCIAL.map(({ icon, link }) => (
+                  <ExternalLink href={link}>
+                    <img src={icon} alt="link" />
+                  </ExternalLink>
+                ))}
+              </SocialIcons>
+            </StyledContainer>
+          </FooterWrapper>
+        </Panel>
       </React.Fragment>
     )}
   />

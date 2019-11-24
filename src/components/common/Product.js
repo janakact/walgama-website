@@ -14,7 +14,7 @@ export default function Product({ name, img, role, nameSinhala, bestFor, suggest
                 isOpen={modalOpen}
                 // onAfterOpen={this.afterOpenModal}
                 onRequestClose={() => setModalOpen(false)}
-                // style={customStyles}
+                style={customStyles}
                 contentLabel="Example Modal"
             >
                 <Subtitle className="sinhala-font">{nameSinhala}</Subtitle>
@@ -28,6 +28,10 @@ export default function Product({ name, img, role, nameSinhala, bestFor, suggest
             </div>
         </div>
     )
+}
+
+const customStyles = {
+    maxWidth: 200
 }
 
 const Title = styled.p`
