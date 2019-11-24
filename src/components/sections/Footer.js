@@ -1,6 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  WhatsappIcon,
+  InstapaperIcon
+} from "react-share"
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
@@ -9,9 +15,9 @@ import ExternalLink from '@common/ExternalLink';
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
-import FacebookIcon from '@static/icons/facebook.svg';
+// import FacebookIcon from '@static/icons/facebook.svg';
 import Logo from '../common/Navbar/Logo';
-import { Panel } from '../global';
+import { Panel, Section } from '../global';
 
 const SOCIAL = [
   {
@@ -48,31 +54,44 @@ const Footer = () => (
             style={{ width: 480, maxWidth: '100%' }}
           />
         </Art> */}
-        <Panel>
+        <Section accent>
 
-          <FooterWrapper>
-            <StyledContainer>
+          <Panel>
 
-              <div>
-                Walgama Ayurveda, <br />
-                Eheliyagoda, Sri Lanka
-            </div>
-              <div>
-                Call: <span> </span>
-                <a style={{ textDecoration: 'none', color: 'black' }} href="tel:077 171 8875">
-                  077 171 8875
+            <FooterWrapper>
+              <StyledContainer>
+
+                <div>Walgama Ayurveda, <br />
+                  Eheliyagoda, Sri Lanka</div>
+                <div>
+                  Call: <span> </span>
+                  <a style={{ textDecoration: 'none', color: 'white' }} href="tel:077 171 8875">
+                    077 171 8875
              </a>
-              </div>
-              <SocialIcons>
-                {SOCIAL.map(({ icon, link }) => (
-                  <ExternalLink href={link}>
-                    <img src={icon} alt="link" />
-                  </ExternalLink>
-                ))}
-              </SocialIcons>
-            </StyledContainer>
-          </FooterWrapper>
-        </Panel>
+                </div>
+
+                <SocialIcons>
+
+                  <a href="https://www.facebook.com/Walgamaayurveda/" >
+                    <FacebookIcon url="https://www.facebook.com/Walgamaayurveda/" round />
+                  </a>
+                  <a href="tel:077 171 8875" >
+                    <WhatsappIcon round />
+                  </a>
+                </SocialIcons>
+
+                {/* <SocialIcons> */}
+                {/* <InstapaperIcon /> */}
+                {/* {SOCIAL.map(({ icon, link }) => (
+                    <ExternalLink href={link}>
+                      <img color="white" src={icon} alt="link" />
+                    </ExternalLink>
+                  ))} */}
+                {/* </SocialIcons> */}
+              </StyledContainer>
+            </FooterWrapper>
+          </Panel>
+        </Section>
       </React.Fragment>
     )}
   />
@@ -119,6 +138,7 @@ const StyledContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 
   @media (max-width: ${props => props.theme.screen.sm}) {
     flex-direction: column;

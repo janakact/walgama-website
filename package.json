@@ -34,6 +34,7 @@
     "react-pose": "^4.0.8",
     "react-scroll-parallax": "^2.2.0",
     "react-scrollspy": "^3.3.5",
+    "react-share": "^3.0.1",
     "react-spring": "^8.0.27",
     "styled-components": "^4.1.3"
   },

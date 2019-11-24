@@ -56,7 +56,7 @@ const Services = () => (
               <Img fluid={data.logo_post.childImageSharp.fluid} />
             </Art> */}
                 <div >
-                  <Text style={{ fontSize: 20, color: 'gray' }} >
+                  <Text style={{ color: 'gray' }} >
                     {services.english}
                   </Text><br />
                   <Text className="sinhala-font" style={{ color: 'gray' }}>
