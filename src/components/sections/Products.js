@@ -126,14 +126,19 @@ const Products = () => (
         allDataJson{
             edges{
               node{
-                products {
-                  name
-                  image
-                  nameSinhala
-                  bestFor
-                  suggestedUse
-                  packSize
-                  descriptionSinhala
+                products{
+                  categoryName
+                  categoryNameSinhala
+                  products {
+                    name
+                    image
+                    nameSinhala
+                    bestFor
+                    suggestedUse
+                    packSize
+                    descriptionSinhala
+                  }
+
                 }
               }
             }
@@ -155,19 +160,29 @@ const Products = () => (
       <Section id="products">
         <Container style={{ position: 'relative' }}>
           <h1>Products</h1>
-          <ProductGrid>
-            {
-              data.allDataJson.edges[0].node.products.map((item) => {
-                const img = data.allFile.edges.find(
-                  ({ node }) => node.relativePath === item.image
-                ).node;
+          {
+            data.allDataJson.edges[0].node.products.map(
+              cat => {
 
-                return (
-                  <Product {...item} img={img} />
-                );
+                return <div>
+                  <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
+                  <h3 style={{ marginTop:-10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
+                  <ProductGrid>
+                    {cat.products.map(
+                      (item) => {
+                        const img = data.allFile.edges.find(
+                          ({ node }) => node.relativePath === item.image
+                        ).node;
+
+                        return (
+                          <Product {...item} img={img} />
+                        );
+                      })
+                    }
+                  </ProductGrid>
+                </div>
               })
-            }
-          </ProductGrid>
+          }
         </Container>
       </Section>
     )}

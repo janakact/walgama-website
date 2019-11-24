@@ -9,20 +9,17 @@ import ExternalLink from '@common/ExternalLink';
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
+import FacebookIcon from '@static/icons/facebook.svg';
 import Logo from '../common/Navbar/Logo';
 
 const SOCIAL = [
   {
-    icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
-  {
     icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://www.instagram.com/walgamaayurveda/?hl=en',
   },
   {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    icon: FacebookIcon,
+    link: 'https://www.facebook.com/Walgamaayurveda/',
   },
 ];
 
@@ -52,16 +49,17 @@ const Footer = () => (
         </Art> */}
         <FooterWrapper>
           <StyledContainer>
-            <Copyright>
-              {/* <Logo /> */}
-              <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
-              </span>
-            </Copyright>
+
+            <div>
+              Walgama Ayurveda, <br />
+              Eheliyagoda, Sri Lanka
+            </div>
+            <div>
+              Call: <span> </span>
+              <a style={{ textDecoration: 'none', color: 'black' }} href="tel:077 171 8875">
+                077 171 8875
+             </a>
+            </div>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
                 <ExternalLink href={link}>
