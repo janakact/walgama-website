@@ -7,6 +7,7 @@ import Navbar from '@common/Navbar';
 
 import Header from '@sections/Header';
 import About from '@sections/About';
+import Services from '@sections/Services';
 import Brands from '@sections/Brands';
 import Products from '@sections/Products';
 import Faq from '@sections/Faq';
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <Header />
     <Products />
     <About />
+    <Services />
     {/* <Brands /> */}
     {/* <Faq /> */}
 

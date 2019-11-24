@@ -54,14 +54,22 @@
             {
                 "english": "Emerging EnterpreneurOf the year 2014",
                 "sinhala": "jif¾ ke.S tk wdhq¾fõo ksIamdok  wdh;kh 2014 jir",
-                "image":"award1.png"
-
+                "image": "award1.png"
             },
             {
                 "english": "Young Enterpreneurof  the year 2018 Gold award",
                 "sinhala": "jif¾ úYsIaG;u ;reK jHjidhlhd  rka iïudkh 2018 jir",
-                "image":"award2.png"
+                "image": "award2.png"
             }
+        ]
+    },
+    "services": {
+        "english": "Our products ordering service is available anywhere in the country. Provision of  Ayurvedic medicines to Ayurvedic Doctors Ayurvedic medical centers for further treatments. Ayurvedic Pharmaceutical raw materials supply service for the registered Doctors at our institution.",
+        "sinhala": "wmf.a ksIamdok weKjqï lr osjhsfka ´kEu ia:dkhlg f.kajd .ekSfï fiajh'wdhq¾fõo ffjoHjreka i|yd wjYHh T!IO ksIamdokh lr ,nd oSfï fiajh' jeäÿr m%;sldr i|yd wdhq¾fõo m%;sldr uOHia:dk'wmf.a wdh;kfha f,aLk.; wdhq¾fõo ffjoHjreka i|yd wuqøjH iemhSfï fiajh' ",
+        "images": [
+            "s1.png",
+            "s2.png",
+            "s3.png"
         ]
     },
     "products": [
