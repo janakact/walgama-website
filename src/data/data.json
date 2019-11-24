@@ -74,6 +74,22 @@
   },
   "products": [
     {
+      "categoryName": "Sample ",
+      "categoryNameSinhala": "Sinkldjla",
+      "products": [
+        {
+          "name": "Asdsdasa",
+          "nameSinhala": "",
+          "ingedients": "das",
+          "bestFor": "das",
+          "suggestedUse": "da",
+          "packSize": "das",
+          "descriptionSinhala": "sda",
+          "image": "10.png"
+        }
+      ]
+    },
+    {
       "categoryName": "Joints and muscles",
       "categoryNameSinhala": "ixê iy fmaYs i|yd",
       "products": [
