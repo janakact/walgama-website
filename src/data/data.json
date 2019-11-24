@@ -1,100 +1,114 @@
 {
-    "slides": [
-        {
-            "name": "Experienced well trained staff",
-            "description": "w;aoelSï nyq, ukd mqyqKq ld¾Hh uKav,h",
-            "color1": "brown",
-            "color2": "#f3cd16",
-            "backgroundColor": "gray",
-            "image": "banner 1.jpg"
-        },
-        {
-            "name": "Cleanliness and high quality ",
-            "description": "iqmsßisÿ nj iy by, .=Kd;aul nj",
-            "backgroundColor": "#f6dc8b",
-            "color1": "white",
-            "color2": "#f3cd16",
-            "image": "banner 2.jpg"
-        },
-        {
-            "name": "Under the prescribed standards ",
-            "description": "kshñ; m%ñ;s ;;ajhkag hg;aj",
-            "backgroundColor": "#f6dc8b",
-            "color1": "white",
-            "color2": "#f3cd16",
-            "image": "banner 3.jpg"
-        },
-        {
-            "name": "Dosage of prescribed herbal medicines ",
-            "description": "ksjerÈ Ydl!IO ud;%dkql+,j fh¥'",
-            "backgroundColor": "brown",
-            "color1": "white",
-            "color2": "#f3cd16",
-            "image": "banner 4.jpg"
-        },
-        {
-            "name": "More than 142 Ayurvedic  products",
-            "description": "142lg wêl wdhq¾fõo ksIamdok",
-            "backgroundColor": "white",
-            "color1": "brown",
-            "color2": "#f3cd16",
-            "image": "banner 5.jpg"
-        }
-    ],
-    "about": {
-        "company": "Walgama",
-        "aboutEnglish": "The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures, Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).",
-        "founderImage": "founder.jpg",
-        "aboutSinhala": "j¾I 1952 § tï'ã'cS rEm;=x. fjouy;d ^j,a.u fjouy;d& úiska wdrïN lrk ,o j,a.u wdhq¾fõo T!IO ksIamdok wdh;kh úiska wdhq¾fõ§h ff;,\" wßIaG\" wdij\" mdKaG fukau úfYaI frda. i|yd .=K fok wdhq¾fõo T!IO ksIamdok lghq;= isÿ lrhs' fï i|yd foaYSh yd wdkhksl .=Kd;aul T!Iëh wuqøjH fhdod .kakd w;r fï jk úg wdhq¾fõo ksIamdok j¾. 143 lg jeä m%udKhla ksIamdokh iy fnodyeÍfï ls%hdj,sh wLKavj isÿ lrkq ,efí' 2012 j¾Ifha isg mqoaa.,sl iud.ula f,i ;u  ksIamdok lghq;= Y%S ,xld m%ñ;s wdh;kfha ;;a;aj iy;slhkag hg;aj isÿlrkq ,nhs' ",
-        "objectiveEnglish": "Our objective is to contribute to the cure of patients by introducing  new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines",
-        "objectiveSinhala": ".=Kd;aul yd iqmsßisÿ wdhq¾fõo T!IO ksIamdokh\"fnod yeÍu iy kj wdhq¾fõo T!IO fj<|m,g yÿkajd foñka frda.Skaf.a frda. iqjm;a lsÍug odhl ùu wmf.a wruqKhs'",
-        "visionEnglish": "Adding modern technology to our products. Expansion of our products throughout the country and abroad. To be a leading institute in the field of Ayurveda.",
-        "visionSinhala": "wmf.a ksIamdok i|yd kj ;dËKh uqiqlsÍu wmf.a ksIamdok Èjhsk mqrd fukau úfoia rg j,g o jHdma; lsÍu wdhq¾fõo fËa;%fha m%uqLfmf,a wdh;khla ùu wmf.a oelauhs",
-        "achievements": [
-            {
-                "english": "Emerging EnterpreneurOf the year 2014",
-                "sinhala": "jif¾ ke.S tk wdhq¾fõo ksIamdok  wdh;kh 2014 jir",
-                "image": "award1.png"
-            },
-            {
-                "english": "Young Enterpreneurof  the year 2018 Gold award",
-                "sinhala": "jif¾ úYsIaG;u ;reK jHjidhlhd  rka iïudkh 2018 jir",
-                "image": "award2.png"
-            }
-        ]
+  "slides": [
+    {
+      "name": "Experienced well trained staff",
+      "description": "w;aoelSï nyq, ukd mqyqKq ld¾Hh uKav,h",
+      "color1": "brown",
+      "color2": "#f3cd16",
+      "backgroundColor": "gray",
+      "image": "banner 1.jpg"
     },
-    "services": {
-        "english": "Our products ordering service is available anywhere in the country. Provision of  Ayurvedic medicines to Ayurvedic Doctors Ayurvedic medical centers for further treatments. Ayurvedic Pharmaceutical raw materials supply service for the registered Doctors at our institution.",
-        "sinhala": "wmf.a ksIamdok weKjqï lr osjhsfka ´kEu ia:dkhlg f.kajd .ekSfï fiajh'wdhq¾fõo ffjoHjreka i|yd wjYHh T!IO ksIamdokh lr ,nd oSfï fiajh' jeäÿr m%;sldr i|yd wdhq¾fõo m%;sldr uOHia:dk'wmf.a wdh;kfha f,aLk.; wdhq¾fõo ffjoHjreka i|yd wuqøjH iemhSfï fiajh' ",
-        "images": [
-            "s1.png",
-            "s2.png",
-            "s3.png"
-        ]
+    {
+      "name": "Cleanliness and high quality ",
+      "description": "iqmsßisÿ nj iy by, .=Kd;aul nj",
+      "backgroundColor": "#f6dc8b",
+      "color1": "white",
+      "color2": "#f3cd16",
+      "image": "banner 2.jpg"
     },
-    "products": [
-        {
-            "categoryName": "Joints and muscles",
-            "categoryNameSinhala": "ixê iy fmaYs i|yd",
-            "products": [
-                {
-                    "name": "Mahanarayana Oil",
-                    "nameSinhala": "uyd kdrdhk ff;,h",
-                    "ingedients": "",
-                    "bestFor": "Paralysis, Head ailments, Muscles & joints pain due to Vata dosha. Ingredients- Rhizome of Hathavariya (Asparagus racemosus), Dashamul & Sesame oil",
-                    "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed. Daily can be used for body massage & used for Nasya, Drink & Enema as directed by the physician.",
-                    "packSize": "28ml/185ml/750ml/4500ml",
-                    "descriptionSinhala": "yd;djdßh w,\"oYuq,a yd ;,f;,a ixfhda.fhka ksmojd we;s fuu ff;,h wxYNd. YS¾I frda. fmaYs yd ixê .; jd; fõokd wjia:d j,§ ndysßka wdf,am lrkak¡isrer iïndykh i|yd Èkm;d Ndú;d l, yel¡ffjoH Wmfoia u; kiH\"mdk\"jia;s i|yd Ndú;d l, yel¡",
-                    "image": "1.png"
-                },
-                {
-                    "name": "Gugguladi oil",
-                    "nameSinhala": "ගුග්ගුලාදී තෛලය",
-                    "ingedients": "",
-                    "bestFor": "Vericose,Arthritis,Knee pain, Back pain,Relives tight & soremuscles,Relives Joint stifness and all Vata dosha based pain.",
-                    "image": "2.png"
-                }
-            ]
-        }
+    {
+      "name": "Under the prescribed standards ",
+      "description": "kshñ; m%ñ;s ;;ajhkag hg;aj",
+      "backgroundColor": "#f6dc8b",
+      "color1": "white",
+      "color2": "#f3cd16",
+      "image": "banner 3.jpg"
+    },
+    {
+      "name": "Dosage of prescribed herbal medicines ",
+      "description": "ksjerÈ Ydl!IO ud;%dkql+,j fh¥'",
+      "backgroundColor": "brown",
+      "color1": "white",
+      "color2": "#f3cd16",
+      "image": "banner 4.jpg"
+    },
+    {
+      "name": "More than 142 Ayurvedic  products",
+      "description": "142lg wêl wdhq¾fõo ksIamdok",
+      "backgroundColor": "white",
+      "color1": "brown",
+      "color2": "#f3cd16",
+      "image": "banner 5.jpg"
+    }
+  ],
+  "about": {
+    "company": "Walgama",
+    "aboutEnglish": "The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures, Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).",
+    "founderImage": "founder.jpg",
+    "aboutSinhala": "j¾I 1952 § tï'ã'cS rEm;=x. fjouy;d ^j,a.u fjouy;d& úiska wdrïN lrk ,o j,a.u wdhq¾fõo T!IO ksIamdok wdh;kh úiska wdhq¾fõ§h ff;,\" wßIaG\" wdij\" mdKaG fukau úfYaI frda. i|yd .=K fok wdhq¾fõo T!IO ksIamdok lghq;= isÿ lrhs' fï i|yd foaYSh yd wdkhksl .=Kd;aul T!Iëh wuqøjH fhdod .kakd w;r fï jk úg wdhq¾fõo ksIamdok j¾. 143 lg jeä m%udKhla ksIamdokh iy fnodyeÍfï ls%hdj,sh wLKavj isÿ lrkq ,efí' 2012 j¾Ifha isg mqoaa.,sl iud.ula f,i ;u  ksIamdok lghq;= Y%S ,xld m%ñ;s wdh;kfha ;;a;aj iy;slhkag hg;aj isÿlrkq ,nhs' ",
+    "objectiveEnglish": "Our objective is to contribute to the cure of patients by introducing  new Ayurvedic drugs into the market and distributing quality Ayurvedic medicines",
+    "objectiveSinhala": ".=Kd;aul yd iqmsßisÿ wdhq¾fõo T!IO ksIamdokh\"fnod yeÍu iy kj wdhq¾fõo T!IO fj<|m,g yÿkajd foñka frda.Skaf.a frda. iqjm;a lsÍug odhl ùu wmf.a wruqKhs'",
+    "visionEnglish": "Adding modern technology to our products. Expansion of our products throughout the country and abroad. To be a leading institute in the field of Ayurveda.",
+    "visionSinhala": "wmf.a ksIamdok i|yd kj ;dËKh uqiqlsÍu wmf.a ksIamdok Èjhsk mqrd fukau úfoia rg j,g o jHdma; lsÍu wdhq¾fõo fËa;%fha m%uqLfmf,a wdh;khla ùu wmf.a oelauhs",
+    "achievements": [
+      {
+        "english": "Emerging EnterpreneurOf the year 2014",
+        "sinhala": "jif¾ ke.S tk wdhq¾fõo ksIamdok  wdh;kh 2014 jir",
+        "image": "award1.png"
+      },
+      {
+        "english": "Young Enterpreneurof  the year 2018 Gold award",
+        "sinhala": "jif¾ úYsIaG;u ;reK jHjidhlhd  rka iïudkh 2018 jir",
+        "image": "award2.png"
+      }
     ]
+  },
+  "services": {
+    "english": "Our products ordering service is available anywhere in the country. Provision of  Ayurvedic medicines to Ayurvedic Doctors Ayurvedic medical centers for further treatments. Ayurvedic Pharmaceutical raw materials supply service for the registered Doctors at our institution.",
+    "sinhala": "wmf.a ksIamdok weKjqï lr osjhsfka ´kEu ia:dkhlg f.kajd .ekSfï fiajh'wdhq¾fõo ffjoHjreka i|yd wjYHh T!IO ksIamdokh lr ,nd oSfï fiajh' jeäÿr m%;sldr i|yd wdhq¾fõo m%;sldr uOHia:dk'wmf.a wdh;kfha f,aLk.; wdhq¾fõo ffjoHjreka i|yd wuqøjH iemhSfï fiajh' ",
+    "images": [
+      "s1.png",
+      "s2.png",
+      "s3.png"
+    ]
+  },
+  "products": [
+    {
+      "categoryName": "",
+      "categoryNameSinhala": "",
+      "products": ""
+    },
+    {
+      "categoryName": "Joints and muscles",
+      "categoryNameSinhala": "ixê iy fmaYs i|yd",
+      "products": [
+        {
+          "name": "Shulahara Oil",
+          "bestFor": "",
+          "suggestedUse": "Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "fiï fldamh ksid yg.kakd oE,jr fõokd jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
+          "image": "",
+          "ingedients": "Mustard seeds, Mee thel,Wandu kapuru"
+        },
+        {
+          "name": "Mahanarayana Oil",
+          "nameSinhala": "uyd kdrdhk ff;,h",
+          "ingedients": "",
+          "bestFor": "Paralysis, Head ailments, Muscles & joints pain due to Vata dosha. Ingredients- Rhizome of Hathavariya (Asparagus racemosus), Dashamul & Sesame oil",
+          "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed. Daily can be used for body massage & used for Nasya, Drink & Enema as directed by the physician.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "yd;djdßh w,\"oYuq,a yd ;,f;,a ixfhda.fhka ksmojd we;s fuu ff;,h wxYNd. YS¾I frda. fmaYs yd ixê .; jd; fõokd wjia:d j,§ ndysßka wdf,am lrkak¡isrer iïndykh i|yd Èkm;d Ndú;d l, yel¡ffjoH Wmfoia u; kiH\"mdk\"jia;s i|yd Ndú;d l, yel¡",
+          "image": "1.png"
+        },
+        {
+          "name": "Gugguladi oil",
+          "nameSinhala": "ගුග්ගුලාදී තෛලය",
+          "ingedients": "",
+          "bestFor": "Vericose,Arthritis,Knee pain, Back pain,Relives tight & soremuscles,Relives Joint stifness and all Vata dosha based pain.",
+          "image": "2.png"
+        }
+      ]
+    }
+  ]
 }
