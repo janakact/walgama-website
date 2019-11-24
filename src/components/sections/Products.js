@@ -173,9 +173,9 @@ const Products = () => (
                     <ProductGrid>
                       {cat.products.map(
                         (item) => {
-                          const img = data.allFile.edges.find(
+                          const img = item.image ? data.allFile.edges.find(
                             ({ node }) => node.relativePath === item.image
-                          ).node;
+                          ).node: "";
 
                           return (
                             <Product {...item} img={img} />
