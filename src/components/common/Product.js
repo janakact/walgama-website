@@ -20,8 +20,8 @@ export default function Product({ name, img, role, nameSinhala, bestFor, suggest
                 <Subtitle className="sinhala-font">{nameSinhala}</Subtitle>
 
             </Modal>
-            <div onClick={() => setModalOpen(true)}>
-                <Img style={{ borderRadius: '100%', borderColor: 'rgba(0,200,0,0.1)', borderWidth: 4, borderStyle: 'solid' }} fluid={img.childImageSharp.fluid} alt={name} />
+            <div onClick={() => setModalOpen(true)} style={{textAlign: 'center'}}>
+                <Img style={{  borderColor: 'rgba(0,200,0,0)', borderWidth: 4, borderStyle: 'solid' }} fluid={img.childImageSharp.fluid} alt={name} />
                 <Title>{name}</Title>
                 <Subtitle className="sinhala-font">{nameSinhala}</Subtitle>
                 <Subtitle>{role}</Subtitle>

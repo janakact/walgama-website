@@ -8,7 +8,7 @@ export default function Slider({ items, duration = 5000 }) {
     const [selected, setSelected, next, previous] = useSlider(items.length, duration);
     return (
         <div>
-            <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
+            <div style={{ width: '100%', height: '50vh', marginTop: 10, position: 'relative' }}>
                 {items.map((item, i) => <SlideItem item={item} visible={i === selected} />)}
                 <Button style={{ left: 5 }} onClick={previous}> {'<'} </Button>
                 <Button style={{ right: 5 }} onClick={next}> {'>'} </Button>
@@ -18,12 +18,12 @@ export default function Slider({ items, duration = 5000 }) {
 }
 
 const SlideItem = ({ visible, item }) =>
-    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '90vh', width: '100%', position: 'absolute' }}>
+    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '50vh', width: '100%', position: 'absolute' }}>
         <BoxImage style={{ width: '100%', height: '100%', position: 'relative', zIndex: -1 }}>
-            <Img fadeIn fluid={item.fluid} style={{ height: '100%' }} imgStyle={{ objectFit: 'cover' }} />
+            <Img fadeIn fluid={item.fluid} style={{ height: '100%', borderRadius: 20 }} imgStyle={{ objectFit: 'cover' }} />
         </BoxImage>
 
-        <div style={{ position: 'absolute', bottom: 0, padding: 30, width: '100%', textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        <div style={{ position: 'absolute', bottom: 0, left:0, right: 0, padding: 30, borderRadius: 20 , margin: 10, textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.4)' }}>
             <DescBoxAnimated style={{}} pose={visible ? 'visible' : 'hidden'} >
 
                 <h2 style={{ color: item.color1 }}>{item.name}</h2>

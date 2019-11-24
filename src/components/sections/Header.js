@@ -21,7 +21,7 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "slider" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "media" } }) {
           edges {
             node {
               relativePath
@@ -57,7 +57,7 @@ const Header = () => (
       }));
       return (
         <HeaderWrapper>
-          {/* <Container> */}
+          <Container>
           <Slider items={items}>
 
           </Slider>
@@ -67,7 +67,7 @@ const Header = () => (
               <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p4.childImageSharp.fluid} />
             </Carousel> */}
-          {/* </Container> */}
+          </Container>
         </HeaderWrapper>
       )
     }}
@@ -139,6 +139,7 @@ const HeaderWrapper = styled.header`
   padding-top: 72px;
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 72px;
+
   }
 `;
 

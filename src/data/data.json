@@ -6,7 +6,7 @@
             "color1": "brown",
             "color2": "#f3cd16",
             "backgroundColor": "gray",
-            "image": "l1.jpg"
+            "image": "banner 1.jpg"
         },
         {
             "name": "Cleanliness and high quality ",
@@ -14,7 +14,7 @@
             "backgroundColor": "#f6dc8b",
             "color1": "white",
             "color2": "#f3cd16",
-            "image": "l2.jpg"
+            "image": "banner 2.jpg"
         },
         {
             "name": "Under the prescribed standards ",
@@ -22,7 +22,7 @@
             "backgroundColor": "#f6dc8b",
             "color1": "white",
             "color2": "#f3cd16",
-            "image": "3.png"
+            "image": "banner 3.jpg"
         },
         {
             "name": "Dosage of prescribed herbal medicines ",
@@ -30,7 +30,7 @@
             "backgroundColor": "brown",
             "color1": "white",
             "color2": "#f3cd16",
-            "image": "4.png"
+            "image": "banner 4.jpg"
         },
         {
             "name": "More than 142 Ayurvedic  products",
@@ -38,7 +38,7 @@
             "backgroundColor": "white",
             "color1": "brown",
             "color2": "#f3cd16",
-            "image": "5.png"
+            "image": "banner 5.jpg"
         }
     ],
     "about": {

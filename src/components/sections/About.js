@@ -57,7 +57,7 @@ const About = () => (
     render={data => (
       <Section id="about" accent="secondary">
         <Container>
-          <h1>About</h1>
+          <h1 style={{ color: 'white', backgroundColor: 'transparent' }}>About</h1>
           <Grid inverse>
             {/* <Art>
               <Img fluid={data.logo_post.childImageSharp.fluid} />
@@ -83,8 +83,8 @@ iy;slhkag hg;aj isÿlrkq ,nhs'
           </Grid>
           <Grid>
             <div>
-              <Title>History</Title>
-              <Text data-sal="slide-right">
+              <Title >History</Title>
+              <Text style={{ fontSize: 20, textAlign: 'left' }}>
                 The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga. <br />
                 Various ayurvedic oils,Tinctures,Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us.  <br />
                 For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.  <br />
@@ -92,19 +92,17 @@ iy;slhkag hg;aj isÿlrkq ,nhs'
               </Text>
             </div>
             <Art>
-              <Parallax styleOuter={{}} x={[50, -50]}>
-                <Img fluid={data.award1.childImageSharp.fluid} />
-              </Parallax>
-              <Parallax x={[-50, 50]}>
-                <Img fluid={data.award2.childImageSharp.fluid} />
-              </Parallax>
+              <Img fluid={data.award1.childImageSharp.fluid} />
             </Art>
           </Grid>
           <Grid inverse>
+            <Art>
+              <Img fluid={data.award2.childImageSharp.fluid} />
+            </Art>
             <div>
               <Title>Services</Title>
-              <Text>
-                <ul data-sal="slide-left">
+              <Text style={{ fontSize: 20 }}>
+                <ul>
                   <li>Our products ordering service is available anywhere in the country</li>
                   <li>Provision of  Ayurvedic medicines to Ayurvedic Doctors</li>
                   <li>Ayurvedic medical centers for further treatments.</li>
@@ -136,17 +134,17 @@ const Grid = styled.div`
     grid-template-columns: 2fr 3fr;
   `}
 
-        h2 {
-          margin - bottom: 16px;
+  h2 {
+          margin-bottom: 16px;
       }
     
   @media (max-width: ${props => props.theme.screen.md}) {
-          grid - template - columns: 1fr;
+          grid-template-columns: 1fr;
         text-align: left;
         margin-bottom: 96px;
     
     &:last-child {
-          margin - bottom: 24px;
+          margin-bottom: 24px;
       }
   
     ${props =>
@@ -163,10 +161,12 @@ const Grid = styled.div`
 const Text = styled.p`
         font-size: 30px;
         opacity: 0.5;
+        color: white
       `;
 
 const Title = styled.h2`
-        opacity: 0.5;
+        opacity: 0.9;
+        color: white
       `;
 
 

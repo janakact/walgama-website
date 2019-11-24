@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `slider`,
-        path: `${__dirname}/src/images/slider`,
+        name: `media`,
+        path: `${__dirname}/src/images/media`,
       },
     },
     {
