@@ -76,7 +76,18 @@
     {
       "categoryName": "Other",
       "categoryNameSinhala": "",
-      "products": ""
+      "products": [
+        {
+          "name": "Madhawa Suwada dupaya (Madhawa Incense Powder)",
+          "nameSinhala": "udOj iqj| OQmh",
+          "ingedients": "",
+          "bestFor": "",
+          "suggestedUse": "When burnt on a charcoal piece; it emits an amazingly positive, vibrant and an alluring aroma that cleanses the air and energy in the surroundings.",
+          "packSize": "50g",
+          "descriptionSinhala": "Wfoa iji ÿï we,a,Sfuka ksjfia jHdmdßl ia:dkfha weiajy lgjy\" N+; fodaI\"wm, Wmøj ÿrelr ÈhqKqj fi!Nd.H we;s lrhs'",
+          "image": "suwada dupa.png"
+        }
+      ]
     },
     {
       "categoryName": "Diabetes cure",
