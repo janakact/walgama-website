@@ -85,8 +85,19 @@
     },
     {
       "categoryName": "Energy",
-      "categoryNameSinhala": "",
-      "products": ""
+      "categoryNameSinhala": "ridhk jdÔlrK",
+      "products": [
+        {
+          "name": "",
+          "nameSinhala": "",
+          "ingedients": "",
+          "bestFor": "",
+          "suggestedUse": "",
+          "packSize": "",
+          "descriptionSinhala": "",
+          "image": ""
+        }
+      ]
     },
     {
       "categoryName": "Oral Care ",
