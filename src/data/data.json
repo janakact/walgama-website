@@ -91,11 +91,6 @@
     {
       "categoryName": "Oral Care ",
       "categoryNameSinhala": "uqL frda. i|yd",
-      "products": ""
-    },
-    {
-      "categoryName": "Skin Health ",
-      "categoryNameSinhala": "iu i|yd",
       "products": [
         {
           "name": "Tooth Powder",
@@ -103,10 +98,16 @@
           "ingedients": "",
           "bestFor": "",
           "suggestedUse": "",
-          "packSize": "20g",
+          "packSize": "",
           "descriptionSinhala": "wr¿\"lrdnqkeá\"uQKu,a\"ms, uq,a we;=¿ T!IO 12l n,fhka o;a uq,a Èhùu\"f,a ierj .e,Su\"o;a fi,ùu\"fõokdj\"uqLfhka ÿ.| yeóu iqj lrhs tku,h iSÍfuka f;drj o;a j, ish¿ lyg bj;a lrhs ",
           "image": "dath beheth.png"
-        },
+        }
+      ]
+    },
+    {
+      "categoryName": "Skin Health ",
+      "categoryNameSinhala": "iu i|yd",
+      "products": [
         {
           "name": "Seethodaka lepa (Herbal Balm)",
           "nameSinhala": "iSf;daol f,amh",
