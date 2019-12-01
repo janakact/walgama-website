@@ -103,6 +103,16 @@
       "categoryNameSinhala": "fiï frda. i|yd",
       "products": [
         {
+          "name": "Cough Syrup",
+          "nameSinhala": "leiai meKsh",
+          "ingedients": "All the five parts of pawatta,Welmee,Thippili,Ginger,Katuwelbatu",
+          "bestFor": "Immediate relief for cough,Wheezing caused by the phlegm of lungs,Phlegm related headache",
+          "suggestedUse": "Children-1-2 tablespoon Adults-2-4 tablespoon thrice a day after meal",
+          "packSize": "100ml",
+          "descriptionSinhala": "U!Iëh mdjÜgd Ydl idrh uqiq l, 100] iajdNdúl leiai meKsh leiai, mmqfõ fiu Yajdikd, m%ody frda. j,g m%;HCIhs    ",
+          "image": "8.png"
+        },
+        {
           "name": "Pawatta Thalsukiri Syrup",
           "nameSinhala": "mdjÜgd ;,a iQlsß meKsh",
           "ingedients": "Pawatta Leaves,Palm suger,Ginger,Wel Thibbatu",
