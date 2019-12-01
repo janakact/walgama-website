@@ -149,6 +149,16 @@
       "categoryNameSinhala": "ixê iy fmaYs i|yd",
       "products": [
         {
+          "name": "Handi Oil",
+          "nameSinhala": "yxÈ ff;,h",
+          "ingedients": "Araththa ,Ankenda,Croton aromaticus,Adenanthera pavonina,Pure Coconut oil",
+          "bestFor": "Muscular pains , bruises and sprains.",
+          "suggestedUse": ": Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
+          "image": "handi oil.png"
+        },
+        {
           "name": "Vatha Widuranga Oil",
           "nameSinhala": "jd; úÿrx. ff;,h",
           "ingedients": "Babila (Sida cordifolia), Asamodhagam (Apium graveolens) & Sesame oil",
