@@ -160,12 +160,13 @@
         },
         {
           "name": "Shulahara Oil",
-          "bestFor": "",
+          "bestFor": "Muscular pains in the chest and limbs. joint pains, contusion and sprains. ",
           "suggestedUse": "Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
           "packSize": "28ml/185ml/750ml/4500ml",
           "descriptionSinhala": "fiï fldamh ksid yg.kakd oE,jr fõokd jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
           "image": "shulahara.png",
-          "ingedients": "Mustard seeds, Mee thel,Wandu kapuru"
+          "ingedients": "Mustard seeds, Mee thel,Wandu kapuru",
+          "nameSinhala": "Y+,yr ff;,h"
         },
         {
           "name": "Mahanarayana Oil",
