@@ -24,6 +24,17 @@ const GlobalStyles = createGlobalStyle`
 
   }
 
+  .model-container {
+    background-color: transparent;
+  }
+
+  .model-background {
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+
   h1, h2, h3, p {
     margin: 0;
     font-weight: normal;

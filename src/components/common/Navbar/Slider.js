@@ -4,12 +4,12 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Parallax } from 'react-scroll-parallax';
 
-export default function Slider({ items, duration = 5000 }) {
+export default function Slider({ items, duration = 5000, height='100vh', width='100%' }) {
     const [selected, setSelected, next, previous] = useSlider(items.length, duration);
     return (
         <div>
-            <div style={{ width: '100%', height: '100vh', marginTop: 10, position: 'relative' }}>
-                {items.map((item, i) => <SlideItem item={item} visible={i === selected} />)}
+            <div style={{ width, height, marginTop: 10, position: 'relative' }}>
+                {items.map((item, i) => <SlideItem height={height} item={item} visible={i === selected} />)}
                 <Button style={{ left: 5 }} onClick={previous}> {'<'} </Button>
                 <Button style={{ right: 5 }} onClick={next}> {'>'} </Button>
             </div>
@@ -17,8 +17,8 @@ export default function Slider({ items, duration = 5000 }) {
     )
 }
 
-const SlideItem = ({ visible, item }) =>
-    <Box pose={visible ? 'visible' : 'hidden'} style={{ height: '100vh', width: '100%', position: 'absolute' }}>
+const SlideItem = ({ visible, item, height }) =>
+    <Box pose={visible ? 'visible' : 'hidden'} style={{ height, width: '100%', position: 'absolute' }}>
         <BoxImage style={{ width: '100%', height: '100%', position: 'relative', zIndex: -1 }}>
             <Img fadeIn fluid={item.fluid} style={{ height: '100%'}} imgStyle={{ objectFit: 'cover' }} />
         </BoxImage>

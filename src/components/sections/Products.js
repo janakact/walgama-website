@@ -111,7 +111,7 @@ const Products = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { sourceInstanceName: { eq: "products" } }) {
+        allFile(filter: { sourceInstanceName: { eq: "uploads" } }) {
           edges {
             node {
               relativePath
@@ -165,15 +165,18 @@ const Products = () => (
           data.allDataJson.edges[0].node.products.map(
             cat => {
 
-              return <div>
+              return <div> 
                 <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
                 <h3 style={{ marginTop: -10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
+                
                 <ProductGrid>
                   {cat.products.map(
                     (item) => {
-                      const img = item.image ? data.allFile.edges.find(
+                      const element = item.image ? data.allFile.edges.find(
                         ({ node }) => node.relativePath === item.image
-                      ).node : "";
+                      ) : "";
+
+                      const img = element ? element.node : undefined;
 
                       return (
                         <Product {...item} img={img} />
@@ -190,16 +193,18 @@ const Products = () => (
 );
 
 const ProductGrid = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   grid-template-rows: min-content;
-  grid-gap: 50px;
-  justify-content: space-between;
+  grid-gap: 50px; */
+  justify-content: center;
   width: 100%;
   margin-top: 32px;
+  margin-bottom: 60px;
+  display: flex;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
-    justify-content: start;
+    justify-content: center;
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
