@@ -2,26 +2,39 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-export default function Logo({img, alt}) {
-    return (
-        <StaticQuery
-            query={graphql`
+export default function Image({ imageName, alt, imageProps }) {
+  return (
+    <StaticQuery
+      query={graphql`
       query {
-        logo: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "${img}" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 200) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        allFile(filter: { 
+          sourceInstanceName: { eq: "uploads" }
+       }) {
+          edges {
+            node {
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 760) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
       }
     `}
-            render={data =>
-                <Img fluid={data[img].childImageSharp.fluid} alt={alt} />
-            }
-        />)
+      render={data => {
+        const element = imageName ? data.allFile.edges.find(
+          ({ node }) => {
+            return node.relativePath === imageName
+          }
+        ) : "";
+
+        const img = element ? element.node : undefined;
+        if (!img) return null;
+        return <Img fluid={img.childImageSharp.fluid} {...imageProps} />
+      }
+      }
+    />)
 
 }

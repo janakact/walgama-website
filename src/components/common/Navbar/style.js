@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Container } from '@components/global';
 
@@ -42,6 +43,7 @@ export const NavListWrapper = styled.div`
       `};
   }
 `;
+
 
 export const NavItem = styled.li`
   margin: 0 0.75em;

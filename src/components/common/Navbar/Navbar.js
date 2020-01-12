@@ -15,6 +15,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import Logo from './Logo';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const NAV_ITEMS = ['Home', 'About', 'Products', 'Services', 'Contact Us'];
 
@@ -33,13 +34,17 @@ class Navbar extends Component {
     }
   };
 
-  getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-      {item}
-    </AnchorLink>
-  );
+  getNavAnchorLink = (item, isHomePage) => {
+    const href = `#${item.toLowerCase()}`
+    if (isHomePage) {
+      return <AnchorLink href={href} onClick={this.closeMobileMenu}>
+        {item}
+      </AnchorLink>
+    }
+    return <AniLink to={`/${href}`} hex="#000" paintDrip >{item}</AniLink>
+  }
 
-  getNavList = ({ mobile = false }) => (
+  getNavList = ({ mobile = false, isHomePage }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
         items={NAV_ITEMS.map(item => item.toLowerCase())}
@@ -48,7 +53,7 @@ class Navbar extends Component {
         offset={-64}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          <NavItem key={navItem}>{this.getNavAnchorLink(navItem, isHomePage)}</NavItem>
         ))}
       </Scrollspy>
     </NavListWrapper>
@@ -56,10 +61,11 @@ class Navbar extends Component {
 
   render() {
     const { mobileMenuOpen } = this.state;
+    const { isHomePage = false } = this.props
 
     return (
       <Nav {...this.props}>
-        <StyledContainer style={{paddingLeft: 20}}>
+        <StyledContainer style={{ paddingLeft: 20 }}>
           <Brand>
             <Logo />
             {/* <Img fluid={img.childImageSharp.fluid} alt={name} /> */}
@@ -71,7 +77,7 @@ class Navbar extends Component {
             </button>
           </Mobile>
 
-          <Mobile hide>{this.getNavList({})}</Mobile>
+          <Mobile hide>{this.getNavList({ isHomePage })}</Mobile>
         </StyledContainer>
         <Mobile>
           {mobileMenuOpen && (

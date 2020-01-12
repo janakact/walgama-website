@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col, } from 'react-bootstrap'
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -6,6 +7,7 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import Product from '../common/Product';
 import { Panel } from '../global';
+import CategoryCard from '../common/CategoryCard';
 
 // const PRODUCTS = [
 //   {
@@ -129,6 +131,7 @@ const Products = () => (
               node{
                 products{
                   categoryName
+                  slug
                   categoryNameSinhala
                   products {
                     name
@@ -160,15 +163,27 @@ const Products = () => (
     render={data => (
       <Section id="products">
 
-        <h1>Products</h1>
-        {
-          data.allDataJson.edges[0].node.products.map(
-            cat => {
+        <Panel>
 
-              return <div> 
-                <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
-                <h3 style={{ marginTop: -10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
-                
+          <h1>Products</h1>
+          <Row >
+            {data.allDataJson.edges[0].node.products.map(
+
+              cat => {
+                return <Col md="4" sm="6" xs="12" ><CategoryCard category={cat} /></Col>
+              }
+            )}
+          </Row>
+          {
+            data.allDataJson.edges[0].node.products.map(
+              cat => {
+                return ""
+                // return <CategoryCard category={cat} />
+                return <div>
+                  <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
+                  <h3 style={{ marginTop: -10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
+
+                  {/* 
                 <ProductGrid>
                   {cat.products.map(
                     (item) => {
@@ -183,10 +198,11 @@ const Products = () => (
                       );
                     })
                   }
-                </ProductGrid>
-              </div>
-            })
-        }
+                </ProductGrid> */}
+                </div>
+              })
+          }
+        </Panel>
       </Section>
     )}
   />

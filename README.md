@@ -7,6 +7,8 @@ An absurd Gatsby starter. The collection of illustrations, [absurd.design](https
 ## Installation
 
 Install the dependencies:
+- Node Version: `8.x`
+- Install yarn `npm install -g yarn` for dependancy management.
 
 ### `yarn install`
 

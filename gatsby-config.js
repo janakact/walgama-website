@@ -6,6 +6,7 @@ module.exports = {
     `gatsby-plugin-svgr`,
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
