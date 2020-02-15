@@ -8,7 +8,7 @@ export default function CategoryCard({ category }) {
     return (
         <div style={{ width: '100%', padding: 20 }}>
             <Card bg="transparent">
-                <Card.Img variant="top" src="static/logo.png" />
+                {/* <Card.Img variant="top" src="logo.png" /> */}
                 <Card.Body>
                     <Card.Title><b>{category.categoryName}</b> </Card.Title>
                     <Card.Text className="sinhala-font">

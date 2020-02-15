@@ -69,7 +69,7 @@ module.exports = {
       options: {
         custom: {
           families: ["SinhalaAstro, DankFMBindumathiMono"],
-          urls: ['static/fonts/fonts.css'],
+          urls: ['fonts/fonts.css'],
         },
       },
     },
