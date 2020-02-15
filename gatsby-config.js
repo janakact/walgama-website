@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  pathPrefix: `/walgama-website`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-svgr`,
