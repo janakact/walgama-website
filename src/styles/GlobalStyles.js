@@ -7,8 +7,6 @@ const normalize = `
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
-  @font-face { font-family: SinhalaAstro; src: url('/fonts/astro11.ttf'); } 
-  @font-face { font-family: FMBindumathi; src: url('/fonts/FMBindumathi.ttf'); } 
   .sinhala-font {
     font-family: FMBindumathi !important;
   }

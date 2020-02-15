@@ -65,6 +65,15 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["SinhalaAstro, DankFMBindumathiMono"],
+          urls: ['static/fonts/fonts.css'],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
