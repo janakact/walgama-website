@@ -8,6 +8,7 @@ import {
   InstapaperIcon
 } from "react-share"
 import Img from 'gatsby-image';
+import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa"
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -63,24 +64,26 @@ const Footer = () => (
 
                 <div>Walgama Ayurvedic Products (Private) Limited <br />
                   Wiyalagoda,Eheliyagoda, Sri Lanka.</div>
-                <div>
-                  Call: <span> </span>
-                  <a style={{ textDecoration: 'none', color: 'white' }} href="tel:077 171 8875">
-                    077 171 8875
-             </a>
-                </div>
-
                 <SocialIcons>
 
-                  <a href="https://www.facebook.com/Walgamaayurveda/" >
+                  {/* <a href="https://www.facebook.com/Walgamaayurveda/" >
                     <FacebookIcon url="https://www.facebook.com/Walgamaayurveda/" round />
                   </a>
                   <a href="tel:077 171 8875" >
                     <WhatsappIcon round />
-                  </a>
+                  </a> */}
                   {/* <ExternalLink href='https://www.instagram.com/walgamaayurveda/?hl=en'>
                     <img height="200px" width="200px" color="white" src={InstagramIcon} alt="link" />
                   </ExternalLink> */}
+                  <a href="https://www.instagram.com/walgamaayurveda">
+                    <FaInstagram size={32} />
+                  </a>
+                  <a href="https://www.facebook.com/Walgamaayurveda/">
+                    <FaFacebook size={32} />
+                  </a>
+                  <a href="tel:077 171 8875">
+                    <FaWhatsapp size={32} />
+                  </a>
                 </SocialIcons>
 
                 {/* <SocialIcons> */}
@@ -102,52 +105,55 @@ const Footer = () => (
 );
 
 const SocialIcons = styled.div`
-  display: flex;
-
-  img {
-    margin: 0 8px;
-    width: 24px;
-    height: 24px;
-  }
-
+      display: flex;
+    
+  a {
+    color: white;
+    margin: 6px
+      }
+  
+      a: hover {
+    color: ${props => props.theme.color.primary};
+      }
+    
   @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-top: 40px;
-  }
-`;
+          margin - top: 40px;
+      }
+    `;
 
 const FooterWrapper = styled.footer`
   /* background-color: ${props => props.theme.color.primary}; */
-  padding: 32px 0;
-`;
+        padding: 32px 0;
+      `;
 
 const Copyright = styled.div`
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
   color: ${props => props.theme.color.black.regular};
-
+      
   a {
-    text-decoration: none;
-    color: inherit;
-  }
-`;
+          text - decoration: none;
+        color: inherit;
+      }
+    `;
 
 const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
-`;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      margin-top: 48px;
+    `;
 
 const StyledContainer = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    
   @media (max-width: ${props => props.theme.screen.sm}) {
-    flex-direction: column;
-    text-align: center;
-  }
-`;
+          flex - direction: column;
+        text-align: center;
+      }
+    `;
 
 export default Footer;

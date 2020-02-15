@@ -133,11 +133,6 @@ const SLIDE_ITEMS = [
 
 // background-color: ${props => props.theme.color.primary};
 const HeaderWrapper = styled.header`
-  padding-top: 42px;
-  @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 72px;
-
-  }
 `;
 
 const Art = styled.figure`

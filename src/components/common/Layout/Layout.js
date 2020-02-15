@@ -13,7 +13,6 @@ const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
       <ParallaxProvider>
-
         <SEO />
         <GlobalStyles />
         {children}
