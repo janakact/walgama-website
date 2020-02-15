@@ -35,3 +35,19 @@ The component `src/components/common/SEO.js` handles all meta data and SEO conte
 ## Styling
 
 This project uses [styled-components]() to handle styling: `src/styles/theme.js` defines the styling base and `src/styles/GlobalStyles.js` includes basic element styles along with the CSS Reset.
+
+
+
+# Todo
+1. Move to a separate page. 
+Service 
+Contact Us
+About 
+
+2. Contact us page 
+
+3. Switch logos in header bar
+
+4. Add Youtube and Instegram to Footer
+
+5. Chat to facebook, Add email form. 
