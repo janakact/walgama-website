@@ -47,7 +47,7 @@ const Services = () => (
 
       return (
         <Section id="services" >
-          <Container>
+          <Container fluid>
             <Panel dark>
 
               <h1 style={{ backgroundColor: 'transparent' }}>Services</h1>
@@ -104,7 +104,7 @@ const Grid = styled.div`
     grid-template-columns: 2fr 3fr;
   `}
 
-  h2 {
+  h2 {  
           margin-bottom: 16px;
       }
     
@@ -129,7 +129,6 @@ const Grid = styled.div`
 
 
 const Text = styled.p`
-        font-size: 30px;
         opacity: 0.5;
         color: white
       `;

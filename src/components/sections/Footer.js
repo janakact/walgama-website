@@ -56,48 +56,49 @@ const Footer = () => (
           />
         </Art> */}
         <Section accent id="contact us">
+          <Container fluid>
+            <Panel>
 
-          <Panel>
+              <FooterWrapper>
+                <StyledContainer>
 
-            <FooterWrapper>
-              <StyledContainer>
+                  <div>Walgama Ayurvedic Products (Private) Limited <br />
+                    Wiyalagoda,Eheliyagoda, Sri Lanka.</div>
+                  <SocialIcons>
 
-                <div>Walgama Ayurvedic Products (Private) Limited <br />
-                  Wiyalagoda,Eheliyagoda, Sri Lanka.</div>
-                <SocialIcons>
-
-                  {/* <a href="https://www.facebook.com/Walgamaayurveda/" >
+                    {/* <a href="https://www.facebook.com/Walgamaayurveda/" >
                     <FacebookIcon url="https://www.facebook.com/Walgamaayurveda/" round />
                   </a>
                   <a href="tel:077 171 8875" >
                     <WhatsappIcon round />
                   </a> */}
-                  {/* <ExternalLink href='https://www.instagram.com/walgamaayurveda/?hl=en'>
+                    {/* <ExternalLink href='https://www.instagram.com/walgamaayurveda/?hl=en'>
                     <img height="200px" width="200px" color="white" src={InstagramIcon} alt="link" />
                   </ExternalLink> */}
-                  <a href="https://www.instagram.com/walgamaayurveda">
-                    <FaInstagram size={32} />
-                  </a>
-                  <a href="https://www.facebook.com/Walgamaayurveda/">
-                    <FaFacebook size={32} />
-                  </a>
-                  <a href="tel:077 171 8875">
-                    <FaWhatsapp size={32} />
-                  </a>
-                </SocialIcons>
+                    <a href="https://www.instagram.com/walgamaayurveda">
+                      <FaInstagram size={32} />
+                    </a>
+                    <a href="https://www.facebook.com/Walgamaayurveda/">
+                      <FaFacebook size={32} />
+                    </a>
+                    <a href="tel:077 171 8875">
+                      <FaWhatsapp size={32} />
+                    </a>
+                  </SocialIcons>
 
-                {/* <SocialIcons> */}
-                {/* <InstapaperIcon /> */}
-                {/* {SOCIAL.map(({ icon, link }) => (
+                  {/* <SocialIcons> */}
+                  {/* <InstapaperIcon /> */}
+                  {/* {SOCIAL.map(({ icon, link }) => (
                   <ExternalLink href={link}>
                     <img color="white" src={icon} alt="link" />
                   </ExternalLink>
                 ))
                 } */}
-                {/* </SocialIcons> */}
-              </StyledContainer>
-            </FooterWrapper>
-          </Panel>
+                  {/* </SocialIcons> */}
+                </StyledContainer>
+              </FooterWrapper>
+            </Panel>
+          </Container>
         </Section>
       </React.Fragment>
     )}

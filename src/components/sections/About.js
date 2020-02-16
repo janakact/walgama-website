@@ -57,67 +57,59 @@ const About = () => (
 
       return (
         <Section id="about" accent="secondary">
-          <Container>
+          <Container fluid>
             <Panel>
 
-              <Panel background>
-                <h1 style={{ color: 'white', backgroundColor: 'transparent' }}>About</h1>
-                <Grid inverse>
-                  {/* <Art>
+              <h1 style={{ color: 'white', backgroundColor: 'transparent' }}>About</h1>
+              <Grid inverse>
+                {/* <Art>
               <Img fluid={data.logo_post.childImageSharp.fluid} />
             </Art> */}
-                  <Art>
-                    <Img style={{ borderRadius: '100%' }} fluid={getImage(data.allFile, about.founderImage)} />
-                  </Art>
+                <Art>
+                  <Img style={{ borderRadius: '100%' }} fluid={getImage(data.allFile, about.founderImage)} />
+                </Art>
 
-                  <div>
-                    <Text >
-                      {about.aboutEnglish}
-                    </Text>
-                    <Text className="sinhala-font">
-                      {about.aboutSinhala}
-                    </Text>
-                    {/* <Text style={{ fontSize: 15 }}>
+                <div>
+                  <Text >
+                    {about.aboutEnglish}
+                  </Text>
+                  <Text className="sinhala-font">
+                    {about.aboutSinhala}
+                  </Text>
+                  {/* <Text style={{ fontSize: 15 }}>
                 <small>
                   The Walgama Pharmaceutical Manufacturing Company was founded in 1952 by Indigenous  Doctor Mr.M.D.P.Rupathunga.Various ayurvedic oils,Tinctures, Āsava,Panta as well as ayurvedic drug products that cure specific diseases are produced by us. For this purpose local and imported quality herbal ingredients are used and more than 143 pharmaceuticals are currently in production and distribution.As a private company since 2012 the productions are carried out in conformity with the Sri Lanka Standards Institution (SLSI).
                 </small>
               </Text> */}
-                  </div>
-                </Grid>
-              </Panel>
-              <Panel background>
-                <div>
-                  <Title >Objective</Title>
-                  <Text > {about.objectiveEnglish}</Text>
-                  <Text className="sinhala-font"> {about.objectiveSinhala}</Text>
                 </div>
-              </Panel>
+              </Grid>
+              <div>
+                <Title >Objective</Title>
+                <Text > {about.objectiveEnglish}</Text>
+                <Text className="sinhala-font"> {about.objectiveSinhala}</Text>
+              </div>
 
-              <Panel background>
-                <div>
-                  <Title >Vision</Title>
-                  <Text  > {about.visionEnglish}</Text>
-                  <Text className="sinhala-font"> {about.visionSinhala}</Text>
-                </div>
-              </Panel>
-              <Panel background>
-                <div style={{ paddingTop: 30 }}>
-                  <Title >Achievements</Title>
-                  {
-                    about.achievements.map(a =>
-                      <Grid>
-                        <div style={{ paddingTop: 30 }}>
-                          <Text > {a.english}</Text>
-                          <Text className="sinhala-font"> {a.sinhala}</Text>
-                        </div>
-                        <Art>
-                          <Img fluid={getImage(data.allFile, a.image)} />
-                        </Art>
-                      </Grid>
-                    )
-                  }
-                </div>
-              </Panel>
+              <div>
+                <Title >Vision</Title>
+                <Text  > {about.visionEnglish}</Text>
+                <Text className="sinhala-font"> {about.visionSinhala}</Text>
+              </div>
+              <div style={{ paddingTop: 30 }}>
+                <Title >Achievements</Title>
+                {
+                  about.achievements.map(a =>
+                    <Grid>
+                      <div style={{ paddingTop: 30 }}>
+                        <Text > {a.english}</Text>
+                        <Text className="sinhala-font"> {a.sinhala}</Text>
+                      </div>
+                      <Art>
+                        <Img fluid={getImage(data.allFile, a.image)} />
+                      </Art>
+                    </Grid>
+                  )
+                }
+              </div>
             </Panel>
           </Container>
         </Section >

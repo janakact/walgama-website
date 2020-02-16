@@ -32,8 +32,8 @@ background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, F
 
 
 export const Panel = styled.section`
-  padding: 32px;
-  margin: 10px;
+  padding: 10px;
+  margin: 5px;
   border-radius: 10px;
   background-color: ${props => props.background ? `rgba(255,255,255,0.1)` : ``}
 `

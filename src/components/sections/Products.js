@@ -162,28 +162,29 @@ const Products = () => (
     `}
     render={data => (
       <Section id="products">
+        <Container fluid>
 
-        <Panel>
+          <Panel>
 
-          <h1>Products</h1>
-          <Row >
-            {data.allDataJson.edges[0].node.products.map(
+            <h1>Products</h1>
+            <Row >
+              {data.allDataJson.edges[0].node.products.map(
 
-              cat => {
-                return <Col md="4" sm="6" xs="12" ><CategoryCard category={cat} /></Col>
-              }
-            )}
-          </Row>
-          {
-            data.allDataJson.edges[0].node.products.map(
-              cat => {
-                return ""
-                // return <CategoryCard category={cat} />
-                return <div>
-                  <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
-                  <h3 style={{ marginTop: -10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
+                cat => {
+                  return <Col md="4" sm="6" xs="12" ><CategoryCard category={cat} /></Col>
+                }
+              )}
+            </Row>
+            {
+              data.allDataJson.edges[0].node.products.map(
+                cat => {
+                  return ""
+                  // return <CategoryCard category={cat} />
+                  return <div>
+                    <h2 style={{ paddingTop: 20, textAlign: 'center' }}>{cat.categoryName}</h2>
+                    <h3 style={{ marginTop: -10, textAlign: 'center', color: 'gray' }} className="sinhala-font">{cat.categoryNameSinhala}</h3>
 
-                  {/* 
+                    {/* 
                 <ProductGrid>
                   {cat.products.map(
                     (item) => {
@@ -199,10 +200,11 @@ const Products = () => (
                     })
                   }
                 </ProductGrid> */}
-                </div>
-              })
-          }
-        </Panel>
+                  </div>
+                })
+            }
+          </Panel>
+        </Container>
       </Section>
     )}
   />
