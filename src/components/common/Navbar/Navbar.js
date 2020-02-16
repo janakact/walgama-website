@@ -17,7 +17,7 @@ import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import Logo from './Logo';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-const NAV_ITEMS = ['Home', 'About', 'Products', 'Services'];
+const NAV_ITEMS = ['Home', 'Products'];
 
 class Navbar extends Component {
   state = {
@@ -55,6 +55,8 @@ class Navbar extends Component {
         {NAV_ITEMS.map(navItem => (
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem, isHomePage)}</NavItem>
         ))}
+        <NavItem ><AniLink to={`/about`} hex="#000" paintDrip >About</AniLink></NavItem>
+        <NavItem ><AniLink to={`/services`} hex="#000" paintDrip >Services</AniLink></NavItem>
         <NavItem ><AniLink to={`/contact`} hex="#000" paintDrip >Contact Us</AniLink></NavItem>
       </Scrollspy>
 

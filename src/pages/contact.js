@@ -6,18 +6,20 @@ import Layout from '@common/Layout';
 import { Container } from '@components/global';
 import { Row, Col, Button, InputGroup, FormControl, Form, Card } from 'react-bootstrap';
 import Footer from '@sections/Footer';
+import { Section } from '../components/global';
 
 const SecondPage = () => (
   <Layout>
     <Navbar isHomePage={false} />
     <br />
     <br />
-    <Container>
-      <Card>
-        <Card.Body>
+    <Section id="contact">
+      <Container fluid  >
+        <Card.Body >
 
           <Row style={{ margin: 20 }} >
             <Col md={6} >
+
               <Card.Body>
                 <Card.Title> Walgama Ayurvedic Products (Private) Limited</Card.Title>
                 <Card.Subtitle className="text-muted">
@@ -30,7 +32,7 @@ const SecondPage = () => (
               </Card.Body>
             </Col>
             <Col md={6}>
-              <Card>
+              <Card bg="dark">
                 <Card.Body>
                   <div dangerouslySetInnerHTML={{ __html: map }}></div>
                 </Card.Body>
@@ -39,8 +41,11 @@ const SecondPage = () => (
           </Row>
         </Card.Body>
 
-      </Card>
-    </Container>
+        <br />
+        <br />
+        <br />
+      </Container>
+    </Section>
     <Footer />
   </Layout>
 );
@@ -99,5 +104,5 @@ const ContactForm = () => {
 }
 
 const map = `
-<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="800" id="gmap_canvas" src="https://maps.google.com/maps?q=Walgama%20Ayurveda&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:800px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:800px;width:100%;}</style></div>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Walgama%20Ayurveda&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
 `
