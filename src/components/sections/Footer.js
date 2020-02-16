@@ -8,7 +8,7 @@ import {
   InstapaperIcon
 } from "react-share"
 import Img from 'gatsby-image';
-import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa"
+import { FaInstagram, FaWhatsapp, FaFacebook, FaYoutube } from "react-icons/fa"
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -55,7 +55,7 @@ const Footer = () => (
             style={{ width: 480, maxWidth: '100%' }}
           />
         </Art> */}
-        <Section accent id="contact us">
+        <Section accent id="contact us" style={{position: 'relative', bottom: 0}}>
           <Container fluid>
             <Panel>
 
@@ -75,11 +75,17 @@ const Footer = () => (
                     {/* <ExternalLink href='https://www.instagram.com/walgamaayurveda/?hl=en'>
                     <img height="200px" width="200px" color="white" src={InstagramIcon} alt="link" />
                   </ExternalLink> */}
+                    <a href="https://www.facebook.com/Walgamaayurveda/">
+                      <FaFacebook size={32} />
+                    </a>
                     <a href="https://www.instagram.com/walgamaayurveda">
                       <FaInstagram size={32} />
                     </a>
                     <a href="https://www.facebook.com/Walgamaayurveda/">
                       <FaFacebook size={32} />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCBiHq1uAEpm57m3g6mfxy3g">
+                      <FaYoutube size={32} />
                     </a>
                     <a href="tel:077 171 8875">
                       <FaWhatsapp size={32} />
@@ -125,6 +131,7 @@ const SocialIcons = styled.div`
 const FooterWrapper = styled.footer`
   /* background-color: ${props => props.theme.color.primary}; */
         padding: 32px 0;
+        
       `;
 
 const Copyright = styled.div`
