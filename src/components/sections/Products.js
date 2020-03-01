@@ -133,6 +133,7 @@ const Products = () => (
                   categoryName
                   slug
                   categoryNameSinhala
+                  image
                   products {
                     name
                     image

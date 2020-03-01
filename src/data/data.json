@@ -74,49 +74,143 @@
   },
   "products": [
     {
-      "categoryName": "Other",
-      "categoryNameSinhala": "",
-      "slug": "other",
+      "categoryName": "Joints and muscles",
+      "categoryNameSinhala": "ixê iy fmaYs i|yd",
+      "image": "joint.jpg",
       "products": [
         {
-          "name": "Asamodagam spirit",
-          "nameSinhala": "wifudao.ï iam%S;=",
-          "ingedients": "",
-          "bestFor": "For loss of appetite,vomiting,abdominal distension,stomach ache related to indigestion and also for worm diseases.Alchohol & suger free",
-          "suggestedUse": "Children-01tbs Adults-2-4tbs,Three times a day",
-          "packSize": "375ml",
-          "descriptionSinhala": "lEu wreÑh\"jukh\"nv msmqu\"nfâ lelal=u\"nv.sks uÈlu wd§ wdydr wÔ¾Kfhka jk frda. Iy mKq frda. i|yd iqÿiqhs¡",
-          "image": "asamodgam.png"
+          "name": "Handi Oil",
+          "nameSinhala": "yxÈ ff;,h",
+          "ingedients": "Araththa ,Ankenda,Croton aromaticus,Adenanthera pavonina,Pure Coconut oil",
+          "bestFor": "Muscular pains , bruises and sprains.",
+          "suggestedUse": ": Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
+          "image": "handi oil.png"
         },
         {
-          "name": "Mosquito repllent spray",
-          "nameSinhala": "uÿre úl¾Yl iafm%a",
-          "ingedients": "",
-          "bestFor": "",
-          "suggestedUse": "00% natural mosquiti repellant Spray made using a blend of natural essential ayurvedic recipe",
-          "packSize": "50ml",
-          "descriptionSinhala": "wdhq¾fõo jÜfgdarejlg wkqj ksIamdÈ; fuu úfYaIs; uÿrejka m<jd yeÍfï iafm%a 100] iajdNdúl wuqøjH fhdod YS% ,xld m%ñ;Skag wkql+,j ksmojd we;¡ ",
-          "image": "spray.png"
+          "name": "Vatha Widuranga Oil",
+          "nameSinhala": "jd; úÿrx. ff;,h",
+          "ingedients": "Babila (Sida cordifolia), Asamodhagam (Apium graveolens) & Sesame oil",
+          "bestFor": "Paralysis,disease due to vitiated Raktha(Blood) & Pitta,wounds, Joints pain due to fractures.",
+          "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "neì, uq,a\"wifudao.ï yd ;,f;,a ixfhda.fhka ksIamdÈ; fuu ff;,h wxYNd.\"r;ams;a frda.\";=jd,\"levqï ìÿï ksid yg.;a ixê fõokd\"weg kyr fmr,Sï j,§ ndysßka wdf,am lrkak",
+          "image": "watha widuranga.png"
         },
         {
-          "name": "Mosquito repllent sticks",
-          "nameSinhala": "uÿre úl¾Yl iqj| l+re",
+          "name": "Shulahara Oil",
+          "bestFor": "Muscular pains in the chest and limbs. joint pains, contusion and sprains. ",
+          "suggestedUse": "Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "fiï fldamh ksid yg.kakd oE,jr fõokd jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
+          "image": "shulahara.png",
+          "ingedients": "Mustard seeds, Mee thel,Wandu kapuru",
+          "nameSinhala": "Y+,yr ff;,h"
+        },
+        {
+          "name": "Mahanarayana Oil",
+          "nameSinhala": "uyd kdrdhk ff;,h",
+          "ingedients": "Rhizome of Hathavariya (Asparagus racemosus), Dashamul & Sesame oil",
+          "bestFor": "Paralysis, Head ailments, Muscles & joints pain due to Vata dosha. Ingredients- Rhizome of Hathavariya (Asparagus racemosus), Dashamul & Sesame oil",
+          "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed. Daily can be used for body massage & used for Nasya, Drink & Enema as directed by the physician.",
+          "packSize": "28ml/185ml/750ml/4500ml",
+          "descriptionSinhala": "yd;djdßh w,\"oYuq,a yd ;,f;,a ixfhda.fhka ksmojd we;s fuu ff;,h wxYNd. YS¾I frda. fmaYs yd ixê .; jd; fõokd wjia:d j,§ ndysßka wdf,am lrkak¡isrer iïndykh i|yd Èkm;d Ndú;d l, yel¡ffjoH Wmfoia u; kiH\"mdk\"jia;s i|yd Ndú;d l, yel¡",
+          "image": "1.png"
+        },
+        {
+          "name": "Gugguladi oil",
+          "nameSinhala": "ගුග්ගුලාදී තෛලය",
+          "ingedients": "Pure Castor oil,Guggul,Natural Viniger and Lime juice",
+          "bestFor": "Vericose,Arthritis,Knee pain, Back pain,Relives tight & soremuscles,Relives Joint stifness and all Vata dosha based pain.",
+          "image": "2.png",
+          "suggestedUse": "Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
+          "packSize": "60ml",
+          "descriptionSinhala": "kyr .eg.eiSu\"wd;rhsàia\"oKsia lelal=u\";=káh lelal=u\"fldkao lelal=u we;=¿ ish¿u jd; fõokd\" ykaÈ bÈóu\"weïu\"weú,s,a, iy ;e,Sï wjia:d j,oS ndysßka wdf,am lrkak "
+        }
+      ]
+    },
+    {
+      "categoryName": "Digestive Health ",
+      "categoryNameSinhala": "wdydr Ô¾Kh i|yd",
+      "image": "digestive.jpg",
+      "products": [
+        {
+          "name": "Krimi Karal",
+          "nameSinhala": "l%sñ lr,a .=,s",
           "ingedients": "",
-          "bestFor": "100% natural mosquiti repellant made using a blend of natural essential ayurvedic recipe",
+          "bestFor": "Best For- All kinds of stomach complaints such as Nausia , Flatulence, Stomach ache, Indigestion, Vomiting",
+          "suggestedUse": "For below 12 years children, due to worm diseases when seen following symptoms, such as; Anorexia, Continuous crying, Nausia, Bite of teeth, Thirst, Weakness, Stools of partial digested food, Flatulence, Stomach ache, Indigestion, Vomiting, Diarrhoea etc. Can given with following methord according to the ages, added with Coffee drink or Lime juice with little quantity of sugar.  •\tBelow 5 years - 01pill (once or twice)  •\tOver 5 years - 02 pills (once or twice) •\tTo keep healthyness, given once a week,-twice morning and evening. For all kinds of stomach complaints of adults-3 pills taken (given) with Coffee drink, Lime juice or Ginger juice.",
+          "packSize": "10g",
+          "descriptionSinhala": "nfâ wÔ¾Khg\" nv lelal=ug\"nv msmqug yd nv oe.¨ug .=Kfoa mdúÉÑ lrk ms<sfj, foys weUq,a\" bÕ=re biau\"ó me‚ oud l=vd <uqkag lr,a 3la iuÕ o f,dl= whg lr,a 6la iuÕ o\"jukhg idÈlald foys wUq,ska .,.d l=vd <uqkag .=,s 3la iuÕ o f,dl= whg .=,s 6la iuÕ o\" Èhlr fokak'",
+          "image": "11.png"
+        },
+        {
+          "name": "Mulabada Samanaya",
+          "nameSinhala": "uQ,dndO iukh",
+          "ingedients": "Chebulic myrobalan,ground neem,katukarosana,indian patcholi No alcohol and preservatives added No side effect is reported,can be used while using any other medicines",
+          "bestFor": "Constipation and hemorrhoids",
+          "suggestedUse": "For adults-3 tablespoons  For children-1 tablespoon Three times per day after meals(shke the bottle before use)",
+          "packSize": "Pack size-200ml/500ml",
+          "descriptionSinhala": "uQ,dndO iukh u, noaOh ÿre lrhswdydr reÑh jvhsw¾Yia frda.h ksÜgdjgu iqj lrhs wr¿\" j<Õid,a\" we;=¿ foaYSh T!Iëh  idrh wvx.= fõ'",
+          "image": "4.png"
+        },
+        {
+          "name": "Gastritis Relief Drink",
+          "nameSinhala": ".eiag%hsàia iqj mdkh",
+          "ingedients": "Produced with rare ayurvedic sprits as ancient recipeIngredients- Chebulic myrobalan,ground neem,katukarosana,indian patcholi,flowers of nagkesar,clove,long pepper and other rare herbs. No alcohol and preservatives added No side effect is reported,can be used while using any other medicines",
+          "bestFor": "gastritis,dyspepsia,headache,dizziness,constipation and hemorrhoids",
+          "suggestedUse": "For adults-3 tablespoons  For children-1 tablespoon Three times per day after meals(shke the bottle before use)",
+          "packSize": "Pack size-200ml",
+          "descriptionSinhala": "b;d ÿ¾,N Ydl j, uq,a\" fmd;= iy u,a j, idrhkaf.ka b;d fi!LHdrlaIs;j ksmojd we;s fuu T!IOfha úfYaI;ajh jkafka iïmQ¾Kfhka u lD;su ridhksl øjHhkaf.ka f;drùuhs ' fuu wï, ms;a; iqj mdkh l=vd <uqkag fïi ye|s 1 ne.ska o jeäysá whg fïi ye|s 2 ne.ska o lEug miq Ndú;d l, hq;= w;r Ndú;d l, m<uq Èkfha§u iykhla ,efnkq we;' fuu T!IOh fkdlvjd udi 03 la Ndú;fhka .eiag%hsàia fkdfyd;a wï, ms;a; frda.h ksÜgdjg iqj lr .; yel'",
+          "image": "3.png"
+        }
+      ]
+    },
+    {
+      "categoryName": "Lung Health ",
+      "categoryNameSinhala": "fiï frda. i|yd",
+      "image": "lung.jpg",
+      "products": [
+        {
+          "name": "Peyawa",
+          "nameSinhala": "fmahdj",
+          "ingedients": "",
+          "bestFor": "An ideal remedy for Flu, Viral Fever, Cough, Phlegm,Wet Nose,Runny Nose, Sneezing, Headaches and Body Pain.",
           "suggestedUse": "",
-          "packSize": "20 sticks",
-          "descriptionSinhala": "wdhq¾fõo jÜfgdarejlg wkqj ksIamdÈ; fuu úfYaIs; uÿrejka m<jd yeÍfï iqj| l+re 100] iajdNdúl wuqøjH fhdod YS% ,xld m%ñ;Skag wkql+,j ksmojd we;¡ ",
-          "image": "mosquito stick.png"
+          "packSize": "10g",
+          "descriptionSinhala": "WKg\" orKq fiïm%;sYHdj\"leiai\" ysi reÞj we;=¨ ish¨ mSkia frda. i|yd Ë‚l .=K fok T!IOhls' bÕ=re\" .ïñßia\" ;smams,s\" fld;a;u,a,s\"wr;a; iy mdjÜgd wvx.=hs' melÜgqj lvd fmahdj l=v iuÕ kjr;ak l,alh w~q fldamahlg  oud W;=rk j;=r oud mSßishlska jid uola ;eïfnkakg yer iSks iuÕ mdkh lsÍfuka  kshu .=Kh ,efí' jeäysáhkag melÜgqju o wjqreÿ 2 isg 12 olajd orejkag melÜgqfjka 1$2 iuÕ l,alh 1$2 la fokak'",
+          "image": "9.png"
         },
         {
-          "name": "Madhawa Suwada dupaya (Madhawa Incense Powder)",
-          "nameSinhala": "udOj iqj| OQmh",
-          "ingedients": "",
-          "bestFor": "",
-          "suggestedUse": "When burnt on a charcoal piece; it emits an amazingly positive, vibrant and an alluring aroma that cleanses the air and energy in the surroundings.",
-          "packSize": "50g",
-          "descriptionSinhala": "Wfoa iji ÿï we,a,Sfuka ksjfia jHdmdßl ia:dkfha weiajy lgjy\" N+; fodaI\"wm, Wmøj ÿrelr ÈhqKqj fi!Nd.H we;s lrhs'",
-          "image": "suwada dupa.png"
+          "name": "Dasawaga Kasaya",
+          "nameSinhala": "oij. lidh",
+          "ingedients": "Pathpadagam, Wild eggplants, Corriandum, Araththa, Adhatoda,Neem bark, Venivel, Ela batu, Bael fruit root, Ginger. ",
+          "bestFor": "An ideal remedy for Flu, Viral Fever, Cough, Phlegm,Wet Nose,Runny Nose, Sneezing, Headaches and Body Pain. ",
+          "suggestedUse": "Boil the contents with 8 cups of water, strain to 1 cup, drink half cup twice a day after the meal.",
+          "packSize": "60g",
+          "descriptionSinhala": "jir 66 la mqrd ck;d õYajdih oskQ j,a.u oij. lidh' m%;sYHd WK\" ffjria WK\" leiai\" fidgq oshr .e,Su\"lsõiqï hdu\"ysiroh\"we.m; fõokdj iqjm;a lrhs' m;amdv.ï\" lgqje,angq\" fld;a;u,a,s\" wr;a;\"mdjÜgd\" fldfydU fmd;=\"fjksje,a.eg\" ngq uq,a\"fn,s uq,a iy úh<s bÕ=re wvx.=fõ'",
+          "image": "Dasawaga kasaya.png"
+        },
+        {
+          "name": "Cough Syrup",
+          "nameSinhala": "leiai meKsh",
+          "ingedients": "All the five parts of pawatta,Welmee,Thippili,Ginger,Katuwelbatu",
+          "bestFor": "Immediate relief for cough,Wheezing caused by the phlegm of lungs,Phlegm related headache",
+          "suggestedUse": "Children-1-2 tablespoon Adults-2-4 tablespoon thrice a day after meal",
+          "packSize": "100ml",
+          "descriptionSinhala": "U!Iëh mdjÜgd Ydl idrh uqiq l, 100] iajdNdúl leiai meKsh leiai, mmqfõ fiu Yajdikd, m%ody frda. j,g m%;HCIhs    ",
+          "image": "8.png"
+        },
+        {
+          "name": "Pawatta Thalsukiri Syrup",
+          "nameSinhala": "mdjÜgd ;,a iQlsß meKsh",
+          "ingedients": "Pawatta Leaves,Palm suger,Ginger,Wel Thibbatu",
+          "bestFor": "Influenza,Chronic Bronchitis,Congrested Stages of the Respiratory systems and Bronchial Asthma",
+          "suggestedUse": "Children-1-2 tablespoon Adults-2-4 tablespoon thrice a day after meal",
+          "packSize": "100ml",
+          "descriptionSinhala": "U!Iëh mdjÜgd\"je,a ;síngq Ydl idrh uqiq l, 100] iajdNdúl mdjÜgd ;,aiQlsß meKsh l,a.;jQ leiai, mmqfõ fiu Yajdikd, m%ody frda. j,g m%;HCIhs    ",
+          "image": "7.png"
         }
       ]
     },
@@ -195,52 +289,6 @@
       ]
     },
     {
-      "categoryName": "Lung Health ",
-      "categoryNameSinhala": "fiï frda. i|yd",
-      "products": [
-        {
-          "name": "Peyawa",
-          "nameSinhala": "fmahdj",
-          "ingedients": "",
-          "bestFor": "An ideal remedy for Flu, Viral Fever, Cough, Phlegm,Wet Nose,Runny Nose, Sneezing, Headaches and Body Pain.",
-          "suggestedUse": "",
-          "packSize": "10g",
-          "descriptionSinhala": "WKg\" orKq fiïm%;sYHdj\"leiai\" ysi reÞj we;=¨ ish¨ mSkia frda. i|yd Ë‚l .=K fok T!IOhls' bÕ=re\" .ïñßia\" ;smams,s\" fld;a;u,a,s\"wr;a; iy mdjÜgd wvx.=hs' melÜgqj lvd fmahdj l=v iuÕ kjr;ak l,alh w~q fldamahlg  oud W;=rk j;=r oud mSßishlska jid uola ;eïfnkakg yer iSks iuÕ mdkh lsÍfuka  kshu .=Kh ,efí' jeäysáhkag melÜgqju o wjqreÿ 2 isg 12 olajd orejkag melÜgqfjka 1$2 iuÕ l,alh 1$2 la fokak'",
-          "image": "9.png"
-        },
-        {
-          "name": "Dasawaga Kasaya",
-          "nameSinhala": "oij. lidh",
-          "ingedients": "Pathpadagam, Wild eggplants, Corriandum, Araththa, Adhatoda,Neem bark, Venivel, Ela batu, Bael fruit root, Ginger. ",
-          "bestFor": "An ideal remedy for Flu, Viral Fever, Cough, Phlegm,Wet Nose,Runny Nose, Sneezing, Headaches and Body Pain. ",
-          "suggestedUse": "Boil the contents with 8 cups of water, strain to 1 cup, drink half cup twice a day after the meal.",
-          "packSize": "60g",
-          "descriptionSinhala": "jir 66 la mqrd ck;d õYajdih oskQ j,a.u oij. lidh' m%;sYHd WK\" ffjria WK\" leiai\" fidgq oshr .e,Su\"lsõiqï hdu\"ysiroh\"we.m; fõokdj iqjm;a lrhs' m;amdv.ï\" lgqje,angq\" fld;a;u,a,s\" wr;a;\"mdjÜgd\" fldfydU fmd;=\"fjksje,a.eg\" ngq uq,a\"fn,s uq,a iy úh<s bÕ=re wvx.=fõ'",
-          "image": "Dasawaga kasaya.png"
-        },
-        {
-          "name": "Cough Syrup",
-          "nameSinhala": "leiai meKsh",
-          "ingedients": "All the five parts of pawatta,Welmee,Thippili,Ginger,Katuwelbatu",
-          "bestFor": "Immediate relief for cough,Wheezing caused by the phlegm of lungs,Phlegm related headache",
-          "suggestedUse": "Children-1-2 tablespoon Adults-2-4 tablespoon thrice a day after meal",
-          "packSize": "100ml",
-          "descriptionSinhala": "U!Iëh mdjÜgd Ydl idrh uqiq l, 100] iajdNdúl leiai meKsh leiai, mmqfõ fiu Yajdikd, m%ody frda. j,g m%;HCIhs    ",
-          "image": "8.png"
-        },
-        {
-          "name": "Pawatta Thalsukiri Syrup",
-          "nameSinhala": "mdjÜgd ;,a iQlsß meKsh",
-          "ingedients": "Pawatta Leaves,Palm suger,Ginger,Wel Thibbatu",
-          "bestFor": "Influenza,Chronic Bronchitis,Congrested Stages of the Respiratory systems and Bronchial Asthma",
-          "suggestedUse": "Children-1-2 tablespoon Adults-2-4 tablespoon thrice a day after meal",
-          "packSize": "100ml",
-          "descriptionSinhala": "U!Iëh mdjÜgd\"je,a ;síngq Ydl idrh uqiq l, 100] iajdNdúl mdjÜgd ;,aiQlsß meKsh l,a.;jQ leiai, mmqfõ fiu Yajdikd, m%ody frda. j,g m%;HCIhs    ",
-          "image": "7.png"
-        }
-      ]
-    },
-    {
       "categoryName": "Hair Health ",
       "categoryNameSinhala": "flaY fmdaIKh i|yd",
       "products": [
@@ -297,94 +345,49 @@
       ]
     },
     {
-      "categoryName": "Digestive Health ",
-      "categoryNameSinhala": "wdydr Ô¾Kh i|yd",
+      "categoryName": "Other",
+      "categoryNameSinhala": "",
+      "slug": "other",
       "products": [
         {
-          "name": "Krimi Karal",
-          "nameSinhala": "l%sñ lr,a .=,s",
+          "name": "Asamodagam spirit",
+          "nameSinhala": "wifudao.ï iam%S;=",
           "ingedients": "",
-          "bestFor": "Best For- All kinds of stomach complaints such as Nausia , Flatulence, Stomach ache, Indigestion, Vomiting",
-          "suggestedUse": "For below 12 years children, due to worm diseases when seen following symptoms, such as; Anorexia, Continuous crying, Nausia, Bite of teeth, Thirst, Weakness, Stools of partial digested food, Flatulence, Stomach ache, Indigestion, Vomiting, Diarrhoea etc. Can given with following methord according to the ages, added with Coffee drink or Lime juice with little quantity of sugar.  •\tBelow 5 years - 01pill (once or twice)  •\tOver 5 years - 02 pills (once or twice) •\tTo keep healthyness, given once a week,-twice morning and evening. For all kinds of stomach complaints of adults-3 pills taken (given) with Coffee drink, Lime juice or Ginger juice.",
-          "packSize": "10g",
-          "descriptionSinhala": "nfâ wÔ¾Khg\" nv lelal=ug\"nv msmqug yd nv oe.¨ug .=Kfoa mdúÉÑ lrk ms<sfj, foys weUq,a\" bÕ=re biau\"ó me‚ oud l=vd <uqkag lr,a 3la iuÕ o f,dl= whg lr,a 6la iuÕ o\"jukhg idÈlald foys wUq,ska .,.d l=vd <uqkag .=,s 3la iuÕ o f,dl= whg .=,s 6la iuÕ o\" Èhlr fokak'",
-          "image": "11.png"
+          "bestFor": "For loss of appetite,vomiting,abdominal distension,stomach ache related to indigestion and also for worm diseases.Alchohol & suger free",
+          "suggestedUse": "Children-01tbs Adults-2-4tbs,Three times a day",
+          "packSize": "375ml",
+          "descriptionSinhala": "lEu wreÑh\"jukh\"nv msmqu\"nfâ lelal=u\"nv.sks uÈlu wd§ wdydr wÔ¾Kfhka jk frda. Iy mKq frda. i|yd iqÿiqhs¡",
+          "image": "asamodgam.png"
         },
         {
-          "name": "Mulabada Samanaya",
-          "nameSinhala": "uQ,dndO iukh",
-          "ingedients": "Chebulic myrobalan,ground neem,katukarosana,indian patcholi No alcohol and preservatives added No side effect is reported,can be used while using any other medicines",
-          "bestFor": "Constipation and hemorrhoids",
-          "suggestedUse": "For adults-3 tablespoons  For children-1 tablespoon Three times per day after meals(shke the bottle before use)",
-          "packSize": "Pack size-200ml/500ml",
-          "descriptionSinhala": "uQ,dndO iukh u, noaOh ÿre lrhswdydr reÑh jvhsw¾Yia frda.h ksÜgdjgu iqj lrhs wr¿\" j<Õid,a\" we;=¿ foaYSh T!Iëh  idrh wvx.= fõ'",
-          "image": "4.png"
+          "name": "Mosquito repllent spray",
+          "nameSinhala": "uÿre úl¾Yl iafm%a",
+          "ingedients": "",
+          "bestFor": "",
+          "suggestedUse": "00% natural mosquiti repellant Spray made using a blend of natural essential ayurvedic recipe",
+          "packSize": "50ml",
+          "descriptionSinhala": "wdhq¾fõo jÜfgdarejlg wkqj ksIamdÈ; fuu úfYaIs; uÿrejka m<jd yeÍfï iafm%a 100] iajdNdúl wuqøjH fhdod YS% ,xld m%ñ;Skag wkql+,j ksmojd we;¡ ",
+          "image": "spray.png"
         },
         {
-          "name": "Gastritis Relief Drink",
-          "nameSinhala": ".eiag%hsàia iqj mdkh",
-          "ingedients": "Produced with rare ayurvedic sprits as ancient recipeIngredients- Chebulic myrobalan,ground neem,katukarosana,indian patcholi,flowers of nagkesar,clove,long pepper and other rare herbs. No alcohol and preservatives added No side effect is reported,can be used while using any other medicines",
-          "bestFor": "gastritis,dyspepsia,headache,dizziness,constipation and hemorrhoids",
-          "suggestedUse": "For adults-3 tablespoons  For children-1 tablespoon Three times per day after meals(shke the bottle before use)",
-          "packSize": "Pack size-200ml",
-          "descriptionSinhala": "b;d ÿ¾,N Ydl j, uq,a\" fmd;= iy u,a j, idrhkaf.ka b;d fi!LHdrlaIs;j ksmojd we;s fuu T!IOfha úfYaI;ajh jkafka iïmQ¾Kfhka u lD;su ridhksl øjHhkaf.ka f;drùuhs ' fuu wï, ms;a; iqj mdkh l=vd <uqkag fïi ye|s 1 ne.ska o jeäysá whg fïi ye|s 2 ne.ska o lEug miq Ndú;d l, hq;= w;r Ndú;d l, m<uq Èkfha§u iykhla ,efnkq we;' fuu T!IOh fkdlvjd udi 03 la Ndú;fhka .eiag%hsàia fkdfyd;a wï, ms;a; frda.h ksÜgdjg iqj lr .; yel'",
-          "image": "3.png"
-        }
-      ]
-    },
-    {
-      "categoryName": "Joints and muscles",
-      "categoryNameSinhala": "ixê iy fmaYs i|yd",
-      "products": [
-        {
-          "name": "Handi Oil",
-          "nameSinhala": "yxÈ ff;,h",
-          "ingedients": "Araththa ,Ankenda,Croton aromaticus,Adenanthera pavonina,Pure Coconut oil",
-          "bestFor": "Muscular pains , bruises and sprains.",
-          "suggestedUse": ": Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
-          "packSize": "28ml/185ml/750ml/4500ml",
-          "descriptionSinhala": "jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
-          "image": "handi oil.png"
+          "name": "Mosquito repllent sticks",
+          "nameSinhala": "uÿre úl¾Yl iqj| l+re",
+          "ingedients": "",
+          "bestFor": "100% natural mosquiti repellant made using a blend of natural essential ayurvedic recipe",
+          "suggestedUse": "",
+          "packSize": "20 sticks",
+          "descriptionSinhala": "wdhq¾fõo jÜfgdarejlg wkqj ksIamdÈ; fuu úfYaIs; uÿrejka m<jd yeÍfï iqj| l+re 100] iajdNdúl wuqøjH fhdod YS% ,xld m%ñ;Skag wkql+,j ksmojd we;¡ ",
+          "image": "mosquito stick.png"
         },
         {
-          "name": "Vatha Widuranga Oil",
-          "nameSinhala": "jd; úÿrx. ff;,h",
-          "ingedients": "Babila (Sida cordifolia), Asamodhagam (Apium graveolens) & Sesame oil",
-          "bestFor": "Paralysis,disease due to vitiated Raktha(Blood) & Pitta,wounds, Joints pain due to fractures.",
-          "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed.",
-          "packSize": "28ml/185ml/750ml/4500ml",
-          "descriptionSinhala": "neì, uq,a\"wifudao.ï yd ;,f;,a ixfhda.fhka ksIamdÈ; fuu ff;,h wxYNd.\"r;ams;a frda.\";=jd,\"levqï ìÿï ksid yg.;a ixê fõokd\"weg kyr fmr,Sï j,§ ndysßka wdf,am lrkak",
-          "image": "watha widuranga.png"
-        },
-        {
-          "name": "Shulahara Oil",
-          "bestFor": "Muscular pains in the chest and limbs. joint pains, contusion and sprains. ",
-          "suggestedUse": "Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
-          "packSize": "28ml/185ml/750ml/4500ml",
-          "descriptionSinhala": "fiï fldamh ksid yg.kakd oE,jr fõokd jd; fõokd jeàï wd§ fya;= ksid we;s jk ;e,Sï W¨lal= ikaê fmr,Sï wjia:d j,oS ndysßka wdf,am lrkak",
-          "image": "shulahara.png",
-          "ingedients": "Mustard seeds, Mee thel,Wandu kapuru",
-          "nameSinhala": "Y+,yr ff;,h"
-        },
-        {
-          "name": "Mahanarayana Oil",
-          "nameSinhala": "uyd kdrdhk ff;,h",
-          "ingedients": "Rhizome of Hathavariya (Asparagus racemosus), Dashamul & Sesame oil",
-          "bestFor": "Paralysis, Head ailments, Muscles & joints pain due to Vata dosha. Ingredients- Rhizome of Hathavariya (Asparagus racemosus), Dashamul & Sesame oil",
-          "suggestedUse": "Warm oil if desired. Apply to the target joints and muscles, massaging the area until the oil is mostly absorbed. Repeat 2–3 times daily or as needed. Daily can be used for body massage & used for Nasya, Drink & Enema as directed by the physician.",
-          "packSize": "28ml/185ml/750ml/4500ml",
-          "descriptionSinhala": "yd;djdßh w,\"oYuq,a yd ;,f;,a ixfhda.fhka ksmojd we;s fuu ff;,h wxYNd. YS¾I frda. fmaYs yd ixê .; jd; fõokd wjia:d j,§ ndysßka wdf,am lrkak¡isrer iïndykh i|yd Èkm;d Ndú;d l, yel¡ffjoH Wmfoia u; kiH\"mdk\"jia;s i|yd Ndú;d l, yel¡",
-          "image": "1.png"
-        },
-        {
-          "name": "Gugguladi oil",
-          "nameSinhala": "ගුග්ගුලාදී තෛලය",
-          "ingedients": "Pure Castor oil,Guggul,Natural Viniger and Lime juice",
-          "bestFor": "Vericose,Arthritis,Knee pain, Back pain,Relives tight & soremuscles,Relives Joint stifness and all Vata dosha based pain.",
-          "image": "2.png",
-          "suggestedUse": "Apply to the Target joints and muscles,massaging the area until the oil is mostly absorbed.Repeat 2-3 times daily or as needed.",
-          "packSize": "60ml",
-          "descriptionSinhala": "kyr .eg.eiSu\"wd;rhsàia\"oKsia lelal=u\";=káh lelal=u\"fldkao lelal=u we;=¿ ish¿u jd; fõokd\" ykaÈ bÈóu\"weïu\"weú,s,a, iy ;e,Sï wjia:d j,oS ndysßka wdf,am lrkak "
+          "name": "Madhawa Suwada dupaya (Madhawa Incense Powder)",
+          "nameSinhala": "udOj iqj| OQmh",
+          "ingedients": "",
+          "bestFor": "",
+          "suggestedUse": "When burnt on a charcoal piece; it emits an amazingly positive, vibrant and an alluring aroma that cleanses the air and energy in the surroundings.",
+          "packSize": "50g",
+          "descriptionSinhala": "Wfoa iji ÿï we,a,Sfuka ksjfia jHdmdßl ia:dkfha weiajy lgjy\" N+; fodaI\"wm, Wmøj ÿrelr ÈhqKqj fi!Nd.H we;s lrhs'",
+          "image": "suwada dupa.png"
         }
       ]
     }
