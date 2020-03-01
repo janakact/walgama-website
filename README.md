@@ -24,6 +24,11 @@ Cleanup cache (often fixes misc errors when run before `yarn dev`):
 
 ### `yarn clean`
 
+## Deploy the website to github pages
+```
+yarn deply
+```
+
 ## Content
 
 Each of the sections in the site are placed in `src/sections`. Data is usually separated out into objects/arrays to be rendered in the component.

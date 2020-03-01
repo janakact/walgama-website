@@ -81,9 +81,6 @@ const Footer = () => (
                     <a href="https://www.instagram.com/walgamaayurveda">
                       <FaInstagram size={32} />
                     </a>
-                    <a href="https://www.facebook.com/Walgamaayurveda/">
-                      <FaFacebook size={32} />
-                    </a>
                     <a href="https://www.youtube.com/channel/UCBiHq1uAEpm57m3g6mfxy3g">
                       <FaYoutube size={32} />
                     </a>
