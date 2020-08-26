@@ -11,8 +11,6 @@ import About from '../components/sections/About';
 const AboutPage = () => (
   <Layout>
     <Navbar isHomePage={false} />
-    <br />
-    <br />
     <About />
     <Footer />
   </Layout>

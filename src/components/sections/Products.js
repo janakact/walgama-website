@@ -162,7 +162,7 @@ const Products = () => (
       }
     `}
     render={data => (
-      <Section id="products">
+      <Section id="products" >
         <Container fluid>
 
           <Panel>

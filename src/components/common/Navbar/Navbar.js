@@ -69,7 +69,7 @@ class Navbar extends Component {
 
     return (
       <Nav {...this.props}>
-        <StyledContainer style={{ paddingLeft: 20 }}>
+        <StyledContainer>
           <Brand>
             <Logo />
             {/* <Img fluid={img.childImageSharp.fluid} alt={name} /> */}

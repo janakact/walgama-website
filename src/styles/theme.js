@@ -1,7 +1,8 @@
 const theme = {
   font: {
     primary: `'Lato', sans-serif`,
-    secondary: `'Lato', sans-serif`,
+    secondary: `'Raleway', sans-serif;`,
+    lato: `'Lato', sans-serif`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
@@ -20,7 +21,8 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
-    primary: '#86c724',
+    primary: '#013220',
+    secondary: '#B8860B'
   },
   screen: {
     xs: '575px',

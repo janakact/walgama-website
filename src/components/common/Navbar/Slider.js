@@ -3,6 +3,7 @@ import posed from 'react-pose';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Parallax } from 'react-scroll-parallax';
+import { SliderTitle , SliderContent} from '../../global';
 
 export default function Slider({ items, duration = 5000, height='100vh', width='100%' }) {
     const [selected, setSelected, next, previous] = useSlider(items.length, duration);
@@ -23,11 +24,10 @@ const SlideItem = ({ visible, item, height }) =>
             <Img fadeIn fluid={item.fluid} style={{ height: '100%'}} imgStyle={{ objectFit: 'cover' }} />
         </BoxImage>
 
-        <div style={{ position: 'absolute', top: 0, left:0, right: 0, padding: 30, borderRadius: 10, margin: 20, textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.4)' }}>
+        <div style={{ position: 'absolute', top: 0, left:0, right: 0, padding: 30, borderRadius: 10, margin: 20, textAlign: 'center' }}>
             <DescBoxAnimated style={{}} pose={visible ? 'visible' : 'hidden'} >
-
-                <h2 style={{ color: item.color1 }}>{item.name}</h2>
-                <p style={{ color: item.color2, fontSize: 40 }} className="sinhala-font">{item.description}</p>
+                <SliderTitle >{item.name}</SliderTitle>
+                <SliderContent className="sinhala-font">{item.description}</SliderContent>
             </DescBoxAnimated>
         </div>
     </Box >

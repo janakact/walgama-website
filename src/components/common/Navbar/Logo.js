@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { BlackFrame } from '../../global';
 
 export default function Logo() {
   return (
@@ -19,7 +20,7 @@ export default function Logo() {
         }
         logo: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "logo2" }
+          name: { eq: "logo-with-background" }
         ) {
           childImageSharp {
             fluid(maxWidth: 400) {
@@ -30,7 +31,7 @@ export default function Logo() {
       }
     `}
       render={data =>
-        <Img fluid={data.logo.childImageSharp.fluid} />
+          <Img style={{borderRadius: 10, margin: 5}} fluid={data.logo.childImageSharp.fluid} />
       }
     />)
 

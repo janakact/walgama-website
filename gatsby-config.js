@@ -61,7 +61,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`average`, `prata\:400,700`, 'Lato'],
+        fonts: [`average`, `prata\:400,700`, 'Lato', 'Raleway\:100', `limelight`],
       },
     },
     {
