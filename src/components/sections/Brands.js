@@ -67,7 +67,7 @@ const UsedBy = () => (
               ))}
             </LogoGrid>
           </div> */}
-          <h1>Lol</h1>
+          {/* <h1>Lol</h1> */}
         </StyledContainer>
       </Section>
     )}

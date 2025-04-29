@@ -10,20 +10,20 @@ import About from '@sections/About';
 import Services from '@sections/Services';
 import Brands from '@sections/Brands';
 import Products from '@sections/Products';
+import Contact from '@sections/Contact';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
   <Layout>
-
     <Navbar isHomePage />
     <Header />
     <Products />
-    {/* <About />
-    <Services /> */}
+    <About />
+    <Services />
+    <Contact />
     {/* <Brands /> */}
     {/* <Faq /> */}
-
     <Footer />
   </Layout >
 );

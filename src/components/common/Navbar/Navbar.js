@@ -17,7 +17,7 @@ import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import Logo from './Logo';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-const NAV_ITEMS = ['Home', 'Products'];
+const NAV_ITEMS = ['Home', 'Products', 'About', 'Services', 'Contact'];
 
 class Navbar extends Component {
   state = {
@@ -41,7 +41,7 @@ class Navbar extends Component {
         {item}
       </AnchorLink>
     }
-    return <AniLink to={`/${href}`} hex="#000" paintDrip >{item}</AniLink>
+    // return <AniLink to={`/${href}`} hex="#000" paintDrip >{item}</AniLink>
   }
 
   getNavList = ({ mobile = false, isHomePage }) => (
@@ -53,11 +53,11 @@ class Navbar extends Component {
         offset={-64}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem, isHomePage)}</NavItem>
+          <NavItem key={navItem}>{this.getNavAnchorLink(navItem, true)}</NavItem>
         ))}
-        <NavItem ><AniLink to={`/about`} hex="#000" paintDrip >About</AniLink></NavItem>
-        <NavItem ><AniLink to={`/services`} hex="#000" paintDrip >Services</AniLink></NavItem>
-        <NavItem ><AniLink to={`/contact`} hex="#000" paintDrip >Contact Us</AniLink></NavItem>
+        {/* <NavItem ><AniLink to={`/about`} hex="#000" paintDrip >About</AniLink></NavItem> */}
+        {/* <NavItem ><AniLink to={`/services`} hex="#000" paintDrip >Services</AniLink></NavItem> */}
+        {/* <NavItem ><AniLink to={`/contact`} hex="#000" paintDrip >Contact Us</AniLink></NavItem> */}
       </Scrollspy>
 
     </NavListWrapper>

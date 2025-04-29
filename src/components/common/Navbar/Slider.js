@@ -3,13 +3,13 @@ import posed from 'react-pose';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 import { Parallax } from 'react-scroll-parallax';
-import { SliderTitle , SliderContent} from '../../global';
+import { SliderTitle, SliderContent } from '../../global';
 
-export default function Slider({ items, duration = 5000, height='100vh', width='100%' }) {
+export default function Slider({ items, duration = 5000, height = '100vh', width = '100%' }) {
     const [selected, setSelected, next, previous] = useSlider(items.length, duration);
     return (
         <div>
-            <div style={{ width, height, marginTop: 10, position: 'relative' }}>
+            <div style={{ width, height, marginTop: 0, position: 'relative' }}>
                 {items.map((item, i) => <SlideItem height={height} item={item} visible={i === selected} />)}
                 <Button style={{ left: 5 }} onClick={previous}> {'<'} </Button>
                 <Button style={{ right: 5 }} onClick={next}> {'>'} </Button>
@@ -21,10 +21,27 @@ export default function Slider({ items, duration = 5000, height='100vh', width='
 const SlideItem = ({ visible, item, height }) =>
     <Box pose={visible ? 'visible' : 'hidden'} style={{ height, width: '100%', position: 'absolute' }}>
         <BoxImage style={{ width: '100%', height: '100%', position: 'relative', zIndex: -1 }}>
-            <Img fadeIn fluid={item.fluid} style={{ height: '100%'}} imgStyle={{ objectFit: 'cover' }} />
+            <Img fadeIn fluid={item.fluid} style={{ height: '100%' }} imgStyle={{ objectFit: 'cover' }} />
         </BoxImage>
 
-        <div style={{ position: 'absolute', top: 0, left:0, right: 0, padding: 30, borderRadius: 10, margin: 20, textAlign: 'center' }}>
+        <div
+            style={
+                {
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    padding: 30,
+                    borderRadius: 10,
+                    margin: 20,
+                    textAlign: 'center'
+                }
+            }
+        >
             <DescBoxAnimated style={{}} pose={visible ? 'visible' : 'hidden'} >
                 <SliderTitle >{item.name}</SliderTitle>
                 <SliderContent className="sinhala-font">{item.description}</SliderContent>

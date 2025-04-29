@@ -55,11 +55,11 @@ const Header = () => (
         fluid: getImage(data.allFile, item.image), ...item
       }));
       return (
-        <HeaderWrapper  id="home">
-            <Slider items={items}>
+        <HeaderWrapper id="home">
+          <Slider items={items}>
 
-            </Slider>
-            {/* <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding: 100, backgroundColor: 'rgba(0,0,0,0.5)', width: '100%' }}>Something</div>}>
+          </Slider>
+          {/* <Carousel renderBottomLeftControls={() => <div style={{ margin: 50, padding: 100, backgroundColor: 'rgba(0,0,0,0.5)', width: '100%' }}>Something</div>}>
               <Img style={{ maxHeight: 800 }} fluid={data.p1.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p2.childImageSharp.fluid} />
               <Img style={{ maxHeight: 800 }} fluid={data.p3.childImageSharp.fluid} />
@@ -71,65 +71,6 @@ const Header = () => (
   />
 );
 
-
-const SLIDE_ITEMS = [
-  {
-    name: 'Experienced well trained staff ',
-    description: "w;aoelSï nyq, ukd mqyqKq ld¾Hh uKav,h",
-    color1: 'brown',
-    color2: '#f3cd16',
-    backgroundColor: 'gray',
-    image: '1.png',
-  },
-  {
-    name: 'Cleanliness and high quality ',
-    description: "iqmsßisÿ nj iy by, .=Kd;aul nj'",
-    backgroundColor: '#f6dc8b',
-    color1: 'brown',
-    color2: '#f3cd16',
-    image: '2.png',
-  },
-  {
-    name: 'Under the prescribed standards ',
-    description: "kshñ; m%ñ;s ;;ajhkag hg;aj'",
-    backgroundColor: '#f6dc8b',
-    color1: 'brown',
-    color2: '#f3cd16',
-    image: '3.png',
-  },
-  {
-    name: 'Dosage of prescribed herbal medicines ',
-    description: "ksjerÈ Ydl!IO ud;%dkql+,j fh¥'",
-    backgroundColor: 'brown',
-    color1: 'brown',
-    color2: '#f3cd16',
-    image: '4.png',
-  },
-  {
-    name: 'More than 142 Ayurvedic  products',
-    description: "142lg wêl wdhq¾fõo ksIamdok",
-    backgroundColor: 'white',
-    color1: 'brown',
-    color2: '#f3cd16',
-    image: '5.png',
-  },
-  // {
-  //   name: 'කැස්ස පැණිය',
-  //   image: 'kassa paniya.jpg',
-  // },
-  // {
-  //   name: 'නීල්‍යාදී තෛලය',
-  //   image: 'lily.jpg',
-  // },
-  // {
-  //   name: 'ජීවශක්ති රසායනය',
-  //   image: 'jeewashakthi.jpg',
-  // },
-  // {
-  //   name: 'ගුග්ගුලාදී තෛලය',
-  //   image: 'gugguladi.jpg',
-  // },
-]
 
 // background-color: ${props => props.theme.color.primary};
 const HeaderWrapper = styled.header`
