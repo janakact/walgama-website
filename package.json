@@ -55,7 +55,7 @@
     "format": "prettier --write \"src/**/*.js\"",
     "clean": "rm -rf .cache && rm -rf public",
     "serve": "gatsby serve --prefix-paths -o",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public --cname walgamaayurveda.com"
+    "deploy": "gatsby build --prefix-paths && echo walgamaayurveda.com > public/CNAME  && gh-pages -d public"
   },
   "devDependencies": {
     "prettier": "^1.15.2"

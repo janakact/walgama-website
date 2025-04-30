@@ -6,7 +6,8 @@ import { darkBackgroundGradient, goldBorder, paperBackground } from '../../globa
 
 // ${darkBackgroundGradient}
 export const Nav = styled.nav`
-  padding: 0px 0;
+  ${paperBackground}
+  padding: 2px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -34,8 +35,7 @@ export const NavListWrapper = styled.div`
         margin-top: 1em;
 
         > ${NavItem} {
-          margin: 0;
-          margin-top: 0.75em;
+          margin: 10px;
         }
       `};
   }
@@ -43,7 +43,7 @@ export const NavListWrapper = styled.div`
 
 
 export const NavItem = styled.li`
-  margin: 0 0.75em;
+  margin: 10px;
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
 
