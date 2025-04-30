@@ -1,2 +1,10 @@
-  @font-face { font-family: SinhalaAstro; src: url('astro11.ttf'); } 
-  @font-face { font-family: FMBindumathi; src: url('FMBindumathi.ttf'); } 
+@font-face { font-family: SinhalaAstro; src: url('astro11.ttf'); } 
+@font-face { font-family: FMBindumathi; src: url('FMBindumathi.ttf'); } 
+
+html.fonts-loading .sinhala-font {
+	visibility: hidden;
+}
+
+html.fonts-loaded .sinhala-font {
+	visibility: visible;
+}
