@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from '@components/global';
 import { darkBackgroundGradient, goldBorder, paperBackground } from '../../global';
 
+// ${darkBackgroundGradient}
 export const Nav = styled.nav`
   padding: 0px 0;
-  ${darkBackgroundGradient}
   position: fixed;
   width: 100%;
   top: 0;
@@ -28,8 +28,8 @@ export const NavListWrapper = styled.div`
     flex-direction: row;
 
     ${({ mobile }) =>
-      mobile &&
-      `
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
 
