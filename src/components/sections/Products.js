@@ -171,8 +171,8 @@ const Products = () => (
             <Row >
               {data.allDataJson.edges[0].node.products.map(
 
-                cat => {
-                  return <Col md="4" sm="6" xs="12" ><CategoryCard category={cat} /></Col>
+                (cat, i) => {
+                  return <Col key={i} md="4" sm="6" xs="12" ><CategoryCard category={cat} /></Col>
                 }
               )}
             </Row>

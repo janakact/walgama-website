@@ -97,8 +97,8 @@ const About = () => (
               <div style={{ paddingTop: 30 }}>
                 <Title >Achievements</Title>
                 {
-                  about.achievements.map(a =>
-                    <Grid>
+                  about.achievements.map((a, i) =>
+                    <Grid key={i}>
                       <div style={{ paddingTop: 30 }}>
                         <Text > {a.english}</Text>
                         <Text className="sinhala-font"> {a.sinhala}</Text>

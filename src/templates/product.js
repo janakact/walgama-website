@@ -40,7 +40,7 @@ export default ({ pageContext }) => {
                     </div>
                     <Row style={{ width: 200 }} >
                         <Col md="11">Pack Size: </Col>
-                        {packSize.split("/").map(txt => <Col md="3"> <Badge variant="dark">{txt}</Badge></Col>)}
+                        {packSize.split("/").map((txt, i) => <Col key={i} md="3"> <Badge variant="dark">{txt}</Badge></Col>)}
                     </Row>
                 </Panel>
             </Container>

@@ -71,8 +71,8 @@ const Services = () => (
                 <div style={{ width: '100%', maxWidth: 350 }}>
 
                   <Grid>
-                    {services.images.map(img =>
-                      <Art>
+                    {services.images.map((img, i) =>
+                      <Art key={i}>
                         <Img fluid={getImage(data.allFile, img)} />
                       </Art>
                     )}

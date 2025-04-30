@@ -15,7 +15,7 @@ import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout showSEO>
     <Navbar isHomePage />
     <Header />
     <Products />

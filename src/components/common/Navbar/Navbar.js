@@ -41,6 +41,9 @@ class Navbar extends Component {
         {item}
       </AnchorLink>
     }
+    return <a href={`/${href}`} onClick={this.closeMobileMenu}>
+      {item}
+    </a>
     // return <AniLink to={`/${href}`} hex="#000" paintDrip >{item}</AniLink>
   }
 
@@ -53,7 +56,7 @@ class Navbar extends Component {
         offset={-64}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem, true)}</NavItem>
+          <NavItem key={navItem}>{this.getNavAnchorLink(navItem, isHomePage)}</NavItem>
         ))}
         {/* <NavItem ><AniLink to={`/about`} hex="#000" paintDrip >About</AniLink></NavItem> */}
         {/* <NavItem ><AniLink to={`/services`} hex="#000" paintDrip >Services</AniLink></NavItem> */}

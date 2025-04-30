@@ -5,10 +5,10 @@ const SEO_DATA = {
   description: 'Walgama Ayurveda, Eheliyagoda, Sri Lanka',
   title: 'Walgama',
   url: '',
-  author: 'ajayns',
+  author: 'madhawa',
   keywords: ['gatsby', 'site', 'absurd'],
   twitter: {
-    id: '@ajayns08',
+    id: 'walgama',
     img: '',
   },
   facebook: {
@@ -20,25 +20,25 @@ const SEO_DATA = {
 const SEO = () => {
   return (
     <Helmet>
-      <meta property="fb:app_id" content={SEO_DATA.facebook.id} />
-      <meta property="og:title" content={SEO_DATA.title} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={SEO_DATA.url} />
-      <meta property="og:image" content={SEO_DATA.facebook.img} />
-      <meta property="og:description" content={SEO_DATA.description} />
+      {/* <meta property="fb:app_id" content={SEO_DATA.facebook.id} /> */}
+      {/* <meta property="og:title" content={SEO_DATA.title} /> */}
+      {/* <meta property="og:type" content="website" /> */}
+      {/* <meta property="og:url" content={SEO_DATA.url} /> */}
+      {/* <meta property="og:image" content={SEO_DATA.facebook.img} /> */}
+      {/* <meta property="og:description" content={SEO_DATA.description} /> */}
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@hackinoutco" />
-      <meta name="twitter:site" content="@hackinoutco" />
-      <meta name="twitter:title" content={SEO_DATA.title} />
-      <meta name="twitter:description" content={SEO_DATA.description} />
-      <meta name="twitter:domain" content={SEO_DATA.url} />
-      <meta name="twitter:image:src" content={SEO_DATA.img} />
+      {/* <meta name="twitter:card" content="summary_large_image" /> */}
+      {/* <meta name="twitter:creator" content="@hackinoutco" /> */}
+      {/* <meta name="twitter:site" content="@hackinoutco" /> */}
+      {/* <meta name="twitter:title" content={SEO_DATA.title} /> */}
+      {/* <meta name="twitter:description" content={SEO_DATA.description} /> */}
+      {/* <meta name="twitter:domain" content={SEO_DATA.url} /> */}
+      {/* <meta name="twitter:image:src" content={SEO_DATA.img} /> */}
 
-      <meta name="description" content={SEO_DATA.description} />
-      <meta name="keywords" content={SEO_DATA.keywords.join(', ')} />
-      <meta name="author" content={SEO_DATA.author} />
-      <title>{SEO_DATA.title}</title>
+      {/* <meta name="description" content={SEO_DATA.description} /> */}
+      {/* <meta name="keywords" content={SEO_DATA.keywords.join(', ')} /> */}
+      {/* <meta name="author" content={SEO_DATA.author} /> */}
+      {/* <title>{SEO_DATA.title}</title> */}
       <html lang="en" />
     </Helmet>
   );

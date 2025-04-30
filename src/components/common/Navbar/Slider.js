@@ -10,7 +10,7 @@ export default function Slider({ items, duration = 5000, height = '100vh', width
     return (
         <div>
             <div style={{ width, height, marginTop: 0, position: 'relative' }}>
-                {items.map((item, i) => <SlideItem height={height} item={item} visible={i === selected} />)}
+                {items.map((item, i) => <SlideItem key={i} height={height} item={item} visible={i === selected} />)}
                 <Button style={{ left: 5 }} onClick={previous}> {'<'} </Button>
                 <Button style={{ right: 5 }} onClick={next}> {'>'} </Button>
             </div>

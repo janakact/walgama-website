@@ -25,12 +25,12 @@ export default ({ pageContext }) => {
                         {category.categoryNameSinhala}
                     </span>)</span> : ""}</h1></a></div>
                     <Row>
-                        {category.products.map(p => <Col sm="12" md="6" lg="4">
+                        {category.products.map((p, i) => <Col key={i} sm="12" md="6" lg="4">
                             <Card bg="transparent">
                                 {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
                                 <Card.Body>
+                                    <Image imageProps={{ width: 200, height: 100 }} imageName={p.image}></Image>
                                     <Card.Text>
-                                        <Image imageProps={{ width: 200, height: 100 }} imageName={p.image}></Image>
                                     </Card.Text>
                                     <Card.Title>{p.name}</Card.Title>
                                     <Card.Text className="sinhala-font">{p.nameSinhala}</Card.Text>

@@ -9,11 +9,11 @@ import SEO from '@common/SEO';
 import theme from '@styles/theme';
 import GlobalStyles from '@styles/GlobalStyles';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, showSEO = false }) => (
   <ThemeProvider theme={theme}>
     <>
       <ParallaxProvider>
-        <SEO />
+        {showSEO && <SEO />}
         <GlobalStyles />
         {children}
       </ParallaxProvider>
