@@ -8,9 +8,28 @@ import { Container, Badge, Col, Row, Button } from "react-bootstrap";
 import { getCategoryRoute } from "../lib/url";
 import { Panel } from "../components/global";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+
+
+// Not sure exact purpose. Keeping for future reference
+const urlRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/g
+function getBuyUrl(content) {
+    // const allUrls = [...content.matchAll(urlRegex)]
+    // const row = allUrls[allUrls.length - 1]
+    // return row ? row[0] : undefined
+    // Can search on Daraz with this link
+    // return `https://www.daraz.lk/catalog/?q=%20Walgama${encodeURIComponent(" " + content)}`
+
+    // The brand page
+    // return "https://www.daraz.lk/walgama-ayurveda-121123006/?spm=a2a0e.pdp_revamp.0.0.2eed34fa8FrBqr&type=brand"
+
+    // Search inside brand page
+    return `https://www.daraz.lk/walgama-ayurveda-121123006/?q=${encodeURIComponent(content)}`
+}
+
 export default ({ pageContext }) => {
     const { product, category } = pageContext
-    const { name, image, role, nameSinhala, ingedients, bestFor, suggestedUse, packSize, descriptionSinhala, } = product
+    const { name, image, role, nameSinhala, ingedients, bestFor, suggestedUse, packSize, descriptionSinhala, darazLink = null } = product
+    const buyLink = darazLink ? darazLink : getBuyUrl(name)
     return (
         <Layout>
             <Navbar />
@@ -35,9 +54,9 @@ export default ({ pageContext }) => {
                     <Text>{bestFor}</Text>
                     <Text>{suggestedUse}</Text>
                     <Text>{role}</Text>
-                    <div>
-                        <Button className="float-right">Buy Now</Button>
-                    </div>
+                    <a href={buyLink} target="_blank">
+                        < Button className="float-right">Buy Now</Button>
+                    </a>
                     <Row style={{ width: 200 }} >
                         <Col md="11">Pack Size: </Col>
                         {packSize.split("/").map((txt, i) => <Col key={i} md="3"> <Badge variant="dark">{txt}</Badge></Col>)}
@@ -45,7 +64,7 @@ export default ({ pageContext }) => {
                 </Panel>
             </Container>
             {/* <div>Page {JSON.stringify(product)}</div> */}
-        </Layout>
+        </Layout >
     )
 }
 const Text = styled.p`
